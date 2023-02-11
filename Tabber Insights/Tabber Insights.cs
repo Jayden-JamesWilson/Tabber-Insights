@@ -7,24 +7,9 @@ namespace Tabber_Insights
     {
         public TabberInsights()
         {
-            string localAppData =
-            Environment.GetFolderPath(
-            Environment.SpecialFolder.LocalApplicationData);
-            string userFilePath
-              = Path.Combine(localAppData, "Tabber");
-
-            if (!Directory.Exists(userFilePath))
-                Directory.CreateDirectory(userFilePath);
-
-            //if it's not already there, 
-            //copy the file from the deployment location to the folder
-            string sourceFilePath = Path.Combine(
-              System.Windows.Forms.Application.StartupPath, "TabberInsightsData.txt");
-            string destFilePath = Path.Combine(userFilePath, "TabberInsightsData.txt");
-            if (!File.Exists(destFilePath))
-                File.Copy(sourceFilePath, destFilePath);
-
             InitializeComponent();
+
+            Properties.Settings.Default.Upgrade();
 
             TabberGoalsPro Tabber_Goals_Pro = new TabberGoalsPro();
             this.Controls.Add(Tabber_Goals_Pro);
