@@ -8,13 +8,7 @@ namespace Tabber_Insights
         [STAThread]
         static void Main()
         {
-            // Copy user settings from previous application version if necessary
-            if (Properties.Settings.Default.UpdateSettings)
-            {
-                Properties.Settings.Default.Upgrade();
-                Properties.Settings.Default.UpdateSettings = false;
-                Properties.Settings.Default.Save();
-            }
+            
 
             //SetProcessDPIAware();
             // To customize application configuration such as set high DPI settings or default font,
