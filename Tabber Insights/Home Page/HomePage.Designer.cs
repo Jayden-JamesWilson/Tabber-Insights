@@ -75,7 +75,6 @@
             this.TotalFocusMinutes = new System.Windows.Forms.Label();
             this.roundFluentPanel8 = new Tabber_Insights.RoundFluentPanel();
             this.ClearFocusMinutesButton = new Tabber_Insights.RoundFluentButton();
-            this.roundFluentButton2 = new Tabber_Insights.RoundFluentButton();
             this.SidePanel.SuspendLayout();
             this.TitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -102,7 +101,6 @@
             this.SidePanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
             this.SidePanel.BorderRadius = 0;
             this.SidePanel.BorderSize = 1;
-            this.SidePanel.Controls.Add(this.roundFluentButton2);
             this.SidePanel.Controls.Add(this.roundFluentButton1);
             this.SidePanel.Controls.Add(this.TabberListsButton);
             this.SidePanel.Controls.Add(this.StatusPanel);
@@ -824,26 +822,6 @@
             this.ClearFocusMinutesButton.UseVisualStyleBackColor = false;
             this.ClearFocusMinutesButton.Click += new System.EventHandler(this.ClearFocusMinutesButton_Click);
             // 
-            // roundFluentButton2
-            // 
-            this.roundFluentButton2.BackColor = System.Drawing.Color.White;
-            this.roundFluentButton2.BackgroundColor = System.Drawing.Color.White;
-            this.roundFluentButton2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
-            this.roundFluentButton2.BorderRadius = 5;
-            this.roundFluentButton2.BorderSize = 1;
-            this.roundFluentButton2.FlatAppearance.BorderSize = 0;
-            this.roundFluentButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundFluentButton2.Font = new System.Drawing.Font("Segoe UI Variable Display", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.roundFluentButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
-            this.roundFluentButton2.Image = global::Tabber_Insights.Properties.Resources.Tabber_Lists_32px;
-            this.roundFluentButton2.Location = new System.Drawing.Point(14, 297);
-            this.roundFluentButton2.Margin = new System.Windows.Forms.Padding(4);
-            this.roundFluentButton2.Name = "roundFluentButton2";
-            this.roundFluentButton2.Size = new System.Drawing.Size(50, 50);
-            this.roundFluentButton2.TabIndex = 25;
-            this.roundFluentButton2.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
-            this.roundFluentButton2.UseVisualStyleBackColor = false;
-            // 
             // HomePage
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -931,6 +909,5 @@
         private Label TotalFocusMinutes;
         private RoundFluentPanel roundFluentPanel8;
         private RoundFluentButton ClearFocusMinutesButton;
-        private RoundFluentButton roundFluentButton2;
     }
 }
