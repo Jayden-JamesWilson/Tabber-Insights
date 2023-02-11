@@ -1,0 +1,30 @@
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Release\net6.0-windows\app.publish\Tabber Insights.exe
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Release\net6.0-windows\app.publish\Tabber Insights.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Release\net6.0-windows\app.publish\Tabber Insights.deps.json
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Release\net6.0-windows\app.publish\Tabber Insights.runtimeconfig.json
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Release\net6.0-windows\app.publish\Tabber Insights.dll.config
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Release\net6.0-windows\app.publish\Tabber Insights.pdb
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Release\net6.0-windows\app.publish\MetroFramework.Design.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Release\net6.0-windows\app.publish\MetroFramework.Fonts.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Release\net6.0-windows\app.publish\MetroFramework.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Release\net6.0-windows\app.publish\Microsoft.Toolkit.Uwp.Notifications.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Release\net6.0-windows\app.publish\PowerArgs.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Release\net6.0-windows\app.publish\System.Diagnostics.EventLog.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Release\net6.0-windows\app.publish\System.Runtime.InteropServices.WindowsRuntime.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Release\net6.0-windows\app.publish\System.ServiceProcess.ServiceController.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Release\net6.0-windows\app.publish\Uno.Diagnostics.Eventing.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Release\net6.0-windows\app.publish\Uno.Fonts.Fluent.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Release\net6.0-windows\app.publish\Uno.Foundation.Logging.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Release\net6.0-windows\app.publish\Uno.Foundation.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Release\net6.0-windows\app.publish\Uno.UI.Composition.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Release\net6.0-windows\app.publish\Uno.UI.Dispatching.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Release\net6.0-windows\app.publish\Uno.UI.FluentTheme.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Release\net6.0-windows\app.publish\Uno.UI.FluentTheme.v1.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Release\net6.0-windows\app.publish\Uno.UI.FluentTheme.v2.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Release\net6.0-windows\app.publish\Uno.UI.Toolkit.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Release\net6.0-windows\app.publish\Uno.UI.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Release\net6.0-windows\app.publish\Uno.Xaml.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Release\net6.0-windows\app.publish\Uno.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Release\net6.0-windows\app.publish\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.Messages.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Release\net6.0-windows\app.publish\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Release\net6.0-windows\app.publish\runtimes\win\lib\net6.0\System.ServiceProcess.ServiceController.dll

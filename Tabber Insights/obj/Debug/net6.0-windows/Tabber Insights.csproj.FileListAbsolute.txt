@@ -1,0 +1,51 @@
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Debug\net6.0-windows\Tabber Insights.exe
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Debug\net6.0-windows\Tabber Insights.dll.config
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Debug\net6.0-windows\Tabber Insights.deps.json
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Debug\net6.0-windows\Tabber Insights.runtimeconfig.json
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Debug\net6.0-windows\Tabber Insights.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Debug\net6.0-windows\Tabber Insights.pdb
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Debug\net6.0-windows\Microsoft.Toolkit.Uwp.Notifications.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\obj\Debug\net6.0-windows\Tabber Insights.csproj.AssemblyReference.cache
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\obj\Debug\net6.0-windows\Tabber_Insights.Properties.Resources.resources
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\obj\Debug\net6.0-windows\Tabber_Insights.Tabber_Focus.TabberFocusPro.resources
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\obj\Debug\net6.0-windows\Tabber_Insights.Tabber_Goals.Goals.Goals_Pop_Up.resources
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\obj\Debug\net6.0-windows\Tabber_Insights.TabberGoalsPro.resources
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\obj\Debug\net6.0-windows\Tabber_Insights.TabberInsights.resources
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\obj\Debug\net6.0-windows\Tabber_Insights.Tabber_Tasks.TabberListsPro.resources
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\obj\Debug\net6.0-windows\Tabber_Insights.Tabber_Reflect.TabberReflectPro.resources
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\obj\Debug\net6.0-windows\Tabber Insights.csproj.GenerateResource.cache
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\obj\Debug\net6.0-windows\Tabber Insights.AssemblyInfoInputs.cache
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\obj\Debug\net6.0-windows\Tabber Insights.AssemblyInfo.cs
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\obj\Debug\net6.0-windows\Tabber Insights.csproj.CoreCompileInputs.cache
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\obj\Debug\net6.0-windows\Tabber Insights.csproj.CopyComplete
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\obj\Debug\net6.0-windows\Tabber Insights.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\obj\Debug\net6.0-windows\refint\Tabber Insights.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\obj\Debug\net6.0-windows\Tabber Insights.pdb
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\obj\Debug\net6.0-windows\Tabber Insights.genruntimeconfig.cache
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\obj\Debug\net6.0-windows\ref\Tabber Insights.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\obj\Debug\net6.0-windows\Tabber_Insights.Home_Page.HomePage.resources
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Debug\net6.0-windows\MetroFramework.Design.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Debug\net6.0-windows\MetroFramework.Fonts.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Debug\net6.0-windows\MetroFramework.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Debug\net6.0-windows\System.Diagnostics.EventLog.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Debug\net6.0-windows\System.ServiceProcess.ServiceController.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.Messages.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.ServiceProcess.ServiceController.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Debug\net6.0-windows\Tabber Insights\Tabber-Insights.ico
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Debug\net6.0-windows\PowerArgs.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Debug\net6.0-windows\System.Runtime.InteropServices.WindowsRuntime.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Debug\net6.0-windows\Uno.Diagnostics.Eventing.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Debug\net6.0-windows\Uno.Fonts.Fluent.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Debug\net6.0-windows\Uno.Foundation.Logging.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Debug\net6.0-windows\Uno.Foundation.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Debug\net6.0-windows\Uno.UI.Composition.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Debug\net6.0-windows\Uno.UI.Dispatching.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Debug\net6.0-windows\Uno.UI.FluentTheme.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Debug\net6.0-windows\Uno.UI.FluentTheme.v1.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Debug\net6.0-windows\Uno.UI.FluentTheme.v2.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Debug\net6.0-windows\Uno.UI.Toolkit.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Debug\net6.0-windows\Uno.UI.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Debug\net6.0-windows\Uno.Xaml.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Debug\net6.0-windows\Uno.dll
+C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\obj\Debug\net6.0-windows\Tabber Insights.d-bfalse.GeneratedMSBuildEditorConfig.editorconfig
