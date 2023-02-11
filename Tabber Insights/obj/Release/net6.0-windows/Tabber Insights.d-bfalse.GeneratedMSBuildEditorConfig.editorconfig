@@ -1,5 +1,5 @@
 is_global = true
-build_property.ApplicationManifest = app.manifest
+build_property.ApplicationManifest = 
 build_property.StartupObject = 
 build_property.ApplicationDefaultFont = 
 build_property.ApplicationHighDpiMode = 
@@ -53,11 +53,3 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.ProjectDir = C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\
-
-[C:/Users/JTech/OneDrive/Applications/Tabber Insights/Project/Tabber-Insights/Tabber Insights/app.manifest]
-build_metadata.AdditionalFiles.SourceItemGroup = 
-build_metadata.AdditionalFiles.Link = 
-build_metadata.AdditionalFiles.TargetPath = 
-build_metadata.AdditionalFiles.FullPath = C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\app.manifest
-build_metadata.AdditionalFiles.Identity = C:\Users\JTech\OneDrive\Applications\Tabber Insights\Project\Tabber-Insights\Tabber Insights\app.manifest
-build_metadata.AdditionalFiles.XamlRuntime = 
