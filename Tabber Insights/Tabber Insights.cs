@@ -9,8 +9,6 @@ namespace Tabber_Insights
         {
             InitializeComponent();
 
-            Properties.Settings.Default.Upgrade();
-
             TabberGoalsPro Tabber_Goals_Pro = new TabberGoalsPro();
             this.Controls.Add(Tabber_Goals_Pro);
             Tabber_Goals_Pro.Dock = DockStyle.Fill;
@@ -19,6 +17,7 @@ namespace Tabber_Insights
         private void Form1_ResizeBegin(object sender, EventArgs e)
         {
             this.Refresh();
+            Properties.Settings.Default.Upgrade();
         }
     }
 }
