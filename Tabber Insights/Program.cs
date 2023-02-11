@@ -8,6 +8,17 @@ namespace Tabber_Insights
         [STAThread]
         static void Main()
         {
+            System.Reflection.Assembly a =
+            System.Reflection.Assembly.GetExecutingAssembly();
+            Version appVersion = a.GetName().Version;
+            string appVersionString = appVersion.ToString();
+
+            if (Properties.Settings.Default.ApplicationVersion != appVersion.ToString())
+            {
+                Properties.Settings.Default.Upgrade();
+                Properties.Settings.Default.ApplicationVersion = appVersionString;
+            }
+
             //SetProcessDPIAware();
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
