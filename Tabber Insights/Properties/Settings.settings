@@ -56,8 +56,8 @@
     <Setting Name="TotalFocusSeconds" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="ApplicationVersion" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+    <Setting Name="UpdateSettings" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
     </Setting>
   </Settings>
 </SettingsFile>

@@ -8,15 +8,12 @@ namespace Tabber_Insights
         [STAThread]
         static void Main()
         {
-            System.Reflection.Assembly a =
-            System.Reflection.Assembly.GetExecutingAssembly();
-            Version appVersion = a.GetName().Version;
-            string appVersionString = appVersion.ToString();
-
-            if (Properties.Settings.Default.ApplicationVersion != appVersion.ToString())
+            // Copy user settings from previous application version if necessary
+            if (Properties.Settings.Default.UpdateSettings)
             {
                 Properties.Settings.Default.Upgrade();
-                Properties.Settings.Default.ApplicationVersion = appVersionString;
+                Properties.Settings.Default.UpdateSettings = false;
+                Properties.Settings.Default.Save();
             }
 
             //SetProcessDPIAware();

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="Tabber Insights.exe" version="1.0.0.5" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
-  <description asmv2:iconFile="Tabber-Insights.ico" asmv2:publisher="Jayden" co.v1:suiteName="Tabber Apps" asmv2:product="Tabber Insights" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <asmv1:assemblyIdentity name="Tabber Insights.exe" version="1.0.0.7" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="Tabber-Insights.ico" asmv2:publisher="Tabber Insights" co.v1:suiteName="Tabber Apps" asmv2:product="Tabber Insights" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
     <assemblyIdentity name="Launcher" version="7.0.0.0" language="neutral" processorArchitecture="msil" />
@@ -169,16 +169,16 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>UYmFUy4Cg42DrUwzpaIyu4HHLq/wgEKojawtsvbYeTs=</dsig:DigestValue>
+      <dsig:DigestValue>OZeaKV0BF+UrB+8LwH37Vm8QLgMWtIkKucD3Hj+2t44=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Tabber Insights.dll.config" size="3713">
+  <file name="Tabber Insights.dll.config" size="3719">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>MNSw8sxlaD0YiTQmvQns5KA8YJVIQ1pHRjx5sqpWisQ=</dsig:DigestValue>
+      <dsig:DigestValue>lQJBH1q5JW03uctBf/defFDSxaHsnxkYPczApXg8Uig=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Tabber Insights.exe" size="158560">

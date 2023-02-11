@@ -169,13 +169,13 @@ namespace Tabber_Insights.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string ApplicationVersion {
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool UpdateSettings {
             get {
-                return ((string)(this["ApplicationVersion"]));
+                return ((bool)(this["UpdateSettings"]));
             }
             set {
-                this["ApplicationVersion"] = value;
+                this["UpdateSettings"] = value;
             }
         }
     }
