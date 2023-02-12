@@ -11,15 +11,6 @@ namespace Tabber_Insights
         [STAThread]
         static void Main()
         {
-            string configPath = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.PerUserRoamingAndLocal).FilePath;
-            if (!File.Exists(configPath))
-            {
-                //Existing user config does not exist, so load settings from previous assembly
-                Settings.Default.Upgrade();
-                Settings.Default.Reload();
-                Settings.Default.Save();
-            }
-
             //SetProcessDPIAware();
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.

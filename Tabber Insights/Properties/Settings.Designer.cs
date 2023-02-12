@@ -170,12 +170,12 @@ namespace Tabber_Insights.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool UpdateSettings {
+        public bool UpgradeRequired {
             get {
-                return ((bool)(this["UpdateSettings"]));
+                return ((bool)(this["UpgradeRequired"]));
             }
             set {
-                this["UpdateSettings"] = value;
+                this["UpgradeRequired"] = value;
             }
         }
     }
