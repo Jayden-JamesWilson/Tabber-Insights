@@ -139,6 +139,8 @@ namespace Tabber_Insights
                 {
                     XmlDocument xmlDocument = new XmlDocument();
 
+                    xmlDocument.Load(openFileDialog.FileName);
+
                     #region Tabber Goals
 
                     #region Goal Titles
@@ -260,8 +262,6 @@ namespace Tabber_Insights
                         Properties.Settings.Default.ReflectionLogs = ReflectionLogs.InnerText;
                     }
                     #endregion
-
-                    xmlDocument.Load(openFileDialog.FileName);
                 }
             }
         }
