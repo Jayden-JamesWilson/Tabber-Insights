@@ -156,7 +156,7 @@ namespace Tabber_Insights
                         Properties.Settings.Default.TabberGoalTitles[1] = TabberGoalTwo.InnerText;
                     }
 
-                    XmlNode TabberGoalThree = xmlDocument.SelectSingleNode("/Root/GoalTitleTwo");
+                    XmlNode TabberGoalThree = xmlDocument.SelectSingleNode("/Root/GoalTitleThree");
                     if (TabberGoalThree != null)
                     {
                         Properties.Settings.Default.TabberGoalTitles[2] = TabberGoalThree.InnerText;
