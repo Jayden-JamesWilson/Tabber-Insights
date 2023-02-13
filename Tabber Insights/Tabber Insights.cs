@@ -142,19 +142,19 @@ namespace Tabber_Insights
                     #region Tabber Goals
 
                     #region Goal Titles
-                    XmlNode TabberGoalOne = xmlDocument.SelectSingleNode("/Root/TabberGoalOne");
+                    XmlNode TabberGoalOne = xmlDocument.SelectSingleNode("/Root/GoalTitleOne");
                     if (TabberGoalOne != null)
                     {
                         Properties.Settings.Default.TabberGoalTitles[0] = TabberGoalOne.InnerText;
                     }
 
-                    XmlNode TabberGoalTwo = xmlDocument.SelectSingleNode("/Root/TabberGoalTwo");
+                    XmlNode TabberGoalTwo = xmlDocument.SelectSingleNode("/Root/GoalTitleTwo");
                     if (TabberGoalTwo != null)
                     {
                         Properties.Settings.Default.TabberGoalTitles[1] = TabberGoalTwo.InnerText;
                     }
 
-                    XmlNode TabberGoalThree = xmlDocument.SelectSingleNode("/Root/TabberGoalThree");
+                    XmlNode TabberGoalThree = xmlDocument.SelectSingleNode("/Root/GoalTitleTwo");
                     if (TabberGoalThree != null)
                     {
                         Properties.Settings.Default.TabberGoalTitles[2] = TabberGoalThree.InnerText;
