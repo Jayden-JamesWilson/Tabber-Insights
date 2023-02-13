@@ -41,6 +41,7 @@
             this.Name = "TabberInsights";
             this.Text = "Tabber Insights";
             this.TransparencyKey = System.Drawing.Color.Red;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.TabberInsights_FormClosing);
             this.ResizeBegin += new System.EventHandler(this.Form1_ResizeBegin);
             this.ResumeLayout(false);
 
