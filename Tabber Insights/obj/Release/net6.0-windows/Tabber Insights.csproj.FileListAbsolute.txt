@@ -107,6 +107,7 @@ C:\Users\JTech\OneDrive\Applications\Tabber\Tabber Insights\Project\Tabber-Insig
 C:\Users\JTech\OneDrive\Applications\Tabber\Tabber Insights\Project\Tabber-Insights\Tabber Insights\obj\Release\net6.0-windows\Tabber Insights.pdb
 C:\Users\JTech\OneDrive\Applications\Tabber\Tabber Insights\Project\Tabber-Insights\Tabber Insights\obj\Release\net6.0-windows\Tabber Insights.genruntimeconfig.cache
 C:\Users\JTech\OneDrive\Applications\Tabber\Tabber Insights\Project\Tabber-Insights\Tabber Insights\obj\Release\net6.0-windows\ref\Tabber Insights.dll
+C:\Users\JTech\OneDrive\Applications\Tabber\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Release\net6.0-windows\Tabber Insights\Tabber-Insights-Data-File-48px.ico
 C:\Users\JTech\OneDrive\Applications\Tabber\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Release\net6.0-windows\Tabber Insights\Tabber Insights.exe
 C:\Users\JTech\OneDrive\Applications\Tabber\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Release\net6.0-windows\Tabber Insights\Tabber Insights.dll
 C:\Users\JTech\OneDrive\Applications\Tabber\Tabber Insights\Project\Tabber-Insights\Tabber Insights\bin\Release\net6.0-windows\Tabber Insights.dll.manifest
