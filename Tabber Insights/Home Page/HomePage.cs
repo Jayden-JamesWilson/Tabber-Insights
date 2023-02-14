@@ -343,8 +343,8 @@ namespace Tabber_Insights.Home_Page
         private void SaveValues()
         {
             SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.Filter = "XML files (*.xml)|*.xml";
-            saveFileDialog.Title = "Save XML Document";
+            saveFileDialog.Filter = "Tabber Insights Data File (*.TabberInsights)|*.TabberInsights";
+            saveFileDialog.Title = "Open Tabber Insighst Data";
 
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
@@ -446,7 +446,7 @@ namespace Tabber_Insights.Home_Page
         private void LoadValues()
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "Tabber Insights Files (*.insights)|*.insights";
+            openFileDialog.Filter = "Tabber Insights Files (*.TabberInsights)|*.TabberInsights";
             openFileDialog.Title = "Open Tabber Insights Data";
 
 

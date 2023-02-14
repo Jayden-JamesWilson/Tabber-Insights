@@ -27,7 +27,7 @@ namespace Tabber_Insights
         private void SaveValues()
         {
             SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.Filter = "Tabber Insights Files (*.insights)|*.insights";
+            saveFileDialog.Filter = "Tabber Insights Files (*.TabberInsights)|*.TabberInsights";
             saveFileDialog.Title = "Save Tabber Insights Data";
 
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
@@ -129,7 +129,7 @@ namespace Tabber_Insights
         private void LoadValues()
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "Tabber Insights Files (*.insights)|*.insights";
+            openFileDialog.Filter = "Tabber Insights Files (*.TabberInsights)|*.TabberInsights";
             openFileDialog.Title = "Open Tabber Insights Data";
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)
