@@ -334,7 +334,7 @@
       <dsig:DigestValue>mZepfKOjRt9Q/a78hnSeqXyRT+kzsybMJw3Xh4QiBv8=</dsig:DigestValue>
     </hash>
   </file>
-  <fileAssociation extension=".insights" description="Tabber Insights Data File" progid="1" defaultIcon="Tabber-Insights-Data-File-48px.ico" xmlns="urn:schemas-microsoft-com:clickonce.v1" />
+  <fileAssociation extension=".TabberInsights" description="Tabber Insights Data File" progid="1" defaultIcon="Tabber-Insights-Data-File-48px.ico" xmlns="urn:schemas-microsoft-com:clickonce.v1" />
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
     <application>
       <!-- A list of the Windows versions that this application has been tested on

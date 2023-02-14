@@ -14,14 +14,14 @@
     <framework targetVersion="4.5" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="Tabber Insights.dll.manifest" size="17448">
+    <dependentAssembly dependencyType="install" codebase="Tabber Insights.dll.manifest" size="17454">
       <assemblyIdentity name="Tabber Insights.exe" version="1.0.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>grhCERGG5S6EA4Nd28oP/VwriKc9ENLW0/XXTUs6MDw=</dsig:DigestValue>
+        <dsig:DigestValue>c4f/GGPl2cs2JKJfydgrzUgtfV6TfEf/4M0qFMPJfEc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
