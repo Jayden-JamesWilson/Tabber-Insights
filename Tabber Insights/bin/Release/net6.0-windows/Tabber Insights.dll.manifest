@@ -169,7 +169,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>kRIUg9PKx2XgjvQaHQsU1/NILWWl+QXreSoIGOy7EeE=</dsig:DigestValue>
+      <dsig:DigestValue>AQzQNbshdkfHmJbb7yjylP8LC4XbvGHlbhsTi9IcCmE=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Tabber Insights.dll.config" size="3720">
