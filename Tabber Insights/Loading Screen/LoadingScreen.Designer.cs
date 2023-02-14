@@ -92,7 +92,7 @@
             this.Name = "LoadingScreen";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Loading...";
+            this.Text = "Loading";
             this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.Load += new System.EventHandler(this.LoadingScreen_Load);
             this.roundFluentPanel1.ResumeLayout(false);
