@@ -19,13 +19,17 @@ namespace Tabber_Insights.Loading_Screen
 
         private void LoadingScreen_Load(object sender, EventArgs e)
         {
-            System.Threading.Thread.Sleep(1000);
+            Timer.Start();
+        }
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            this.Hide();
 
             TabberInsights TabberInsights = new TabberInsights();
             TabberInsights.Show();
 
-            this.Text = "Loaded";
-            this.Hide();
+            Timer.Stop();
         }
     }
 }
