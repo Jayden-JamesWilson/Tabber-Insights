@@ -163,13 +163,13 @@
       <dsig:DigestValue>88jGK5ihB135ZeWaSvw2AuRX+d4H9kagLfvypRJb30s=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Tabber Insights.dll" size="292704">
+  <file name="Tabber Insights.dll" size="294240">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>Fv/AfJi3TKLUZ9X6mAkmfag1+ZaR0Piv3htT9mhusGo=</dsig:DigestValue>
+      <dsig:DigestValue>yyh2XUF2wTCBuwetub1J2dFzJt/INDgFhbs5hJwPJ3I=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Tabber Insights.dll.config" size="3720">
@@ -181,13 +181,13 @@
       <dsig:DigestValue>NYJdiHpadeceSjxyVjXutyK/zDUt7rPrd1zET+mk6gI=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Tabber Insights.exe" size="158560">
+  <file name="Tabber Insights.exe" size="159072">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>bIu8NTCfCJ3eAFIlMuPxCxpCa0D47We4LCEab+bC/uI=</dsig:DigestValue>
+      <dsig:DigestValue>WwVvzxrN9iJ9hEwohoUwx2Ki+7HiTDWAHw0uDQFgynY=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Tabber Insights.runtimeconfig.json" size="451">

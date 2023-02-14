@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Serialization;
 using Tabber_Insights.Home_Page;
 using Tabber_Insights.Tabber_Focus;
 using Tabber_Insights.Tabber_Reflect;
@@ -15,11 +16,13 @@ namespace Tabber_Insights.Tabber_Tasks
 {
     public partial class TabberListsPro : UserControl
     {
+        private DataTable dataTable;
 
         #region Constructor
         public TabberListsPro()
         {
             InitializeComponent();
+            dataTable = new DataTable();
 
             DataGridViewCheckBoxColumn Complete = new DataGridViewCheckBoxColumn();
             Complete.HeaderText = "Complete";
@@ -36,6 +39,7 @@ namespace Tabber_Insights.Tabber_Tasks
             Priority.Items.Add("High");
             Priority.Items.Add("Critical");
             List.Columns.Add(Priority);
+            
 
             Thread.Sleep(100);
             DataGridViewComboBoxColumn Status = new DataGridViewComboBoxColumn();
@@ -67,13 +71,14 @@ namespace Tabber_Insights.Tabber_Tasks
             if (result == DialogResult.Yes)
             {
                 List.Rows.Clear();
+                SaveDataGridViewData();
             }
-            else{}
+            else { }
         }
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
-            
+
             SaveFileDialog saveFileDialog = new SaveFileDialog();
             saveFileDialog.Title = "Save Tabber List";
             saveFileDialog.DefaultExt = "List";
@@ -110,6 +115,8 @@ namespace Tabber_Insights.Tabber_Tasks
 
         private void OpenButton_Click(object sender, EventArgs e)
         {
+            List.AllowUserToAddRows = false;
+
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Title = "Open Tabber List";
             openFileDialog.DefaultExt = "List";
@@ -145,13 +152,35 @@ namespace Tabber_Insights.Tabber_Tasks
                             }
                             catch
                             {
-                               
+
                             }
                         }
                     }
                 }
 
                 ListNameLabel.Text = System.IO.Path.GetFileNameWithoutExtension(openFileDialog.FileName) + " ";
+
+                if (List.Rows.Count > 0)
+                {
+                    DataGridViewRow lastRow = List.Rows[List.Rows.Count - 1];
+                    bool isLastRowEmpty = true;
+                    for (int i = 0; i < lastRow.Cells.Count; i++)
+                    {
+                        if (lastRow.Cells[i].Value != null)
+                        {
+                            isLastRowEmpty = false;
+                            break;
+                        }
+                    }
+
+                    // Remove the last row if it is empty
+                    if (isLastRowEmpty)
+                    {
+                        List.Rows.RemoveAt(List.Rows.Count - 1);
+                    }
+                }
+
+                List.AllowUserToAddRows = true;
             }
         }
 
@@ -160,74 +189,58 @@ namespace Tabber_Insights.Tabber_Tasks
         #region Side Panel
         private void TabberGoals_Click(object sender, EventArgs e)
         {
-            string message = "Are you sure you want to enter Tabber Goals? Any unsaved work will be lost.";
-            string title = "Enter Tabber Goals";
-            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
-            DialogResult result = MessageBox.Show(message, title, buttons, MessageBoxIcon.Question);
-            if (result == DialogResult.Yes)
-            {
-                TabberGoalsPro Tabber_Goals_Pro = new TabberGoalsPro();
+            SaveDataGridViewData();
 
-                foreach (Form f in Application.OpenForms)
+            TabberGoalsPro Tabber_Goals_Pro = new TabberGoalsPro();
+
+            foreach (Form f in Application.OpenForms)
+            {
+                if (f.Text == "Tabber Insights")
                 {
-                    if (f.Text == "Tabber Insights")
-                    {
-                        f.Controls.Add(Tabber_Goals_Pro);
-                        Tabber_Goals_Pro.Dock = DockStyle.Fill;
-                        f.Controls.Remove(this);
-                    }
+                    f.Controls.Add(Tabber_Goals_Pro);
+                    Tabber_Goals_Pro.Dock = DockStyle.Fill;
+                    f.Controls.Remove(this);
                 }
             }
-            else { }
         }
 
         private void TabberFocus_Click(object sender, EventArgs e)
         {
-            string message = "Are you sure you want to enter Tabber Focus? Any unsaved work will be lost.";
-            string title = "Enter Tabber Focus";
-            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
-            DialogResult result = MessageBox.Show(message, title, buttons, MessageBoxIcon.Question);
-            if (result == DialogResult.Yes)
-            {
-                TabberFocusPro tabberFocusPro = new TabberFocusPro();
+            SaveDataGridViewData();
 
-                foreach (Form f in Application.OpenForms)
+            TabberFocusPro tabberFocusPro = new TabberFocusPro();
+
+            foreach (Form f in Application.OpenForms)
+            {
+                if (f.Text == "Tabber Insights")
                 {
-                    if (f.Text == "Tabber Insights")
-                    {
-                        f.Controls.Add(tabberFocusPro);
-                        tabberFocusPro.Dock = DockStyle.Fill;
-                        f.Controls.Remove(this);
-                    }
+                    f.Controls.Add(tabberFocusPro);
+                    tabberFocusPro.Dock = DockStyle.Fill;
+                    f.Controls.Remove(this);
                 }
             }
-            else { }
         }
 
         private void TabberReflect_Click(object sender, EventArgs e)
         {
-            string message = "Are you sure you want to enter Tabber Reflect? Any unsaved work will be lost.";
-            string title = "Enter Tabber Reflect?";
-            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
-            DialogResult result = MessageBox.Show(message, title, buttons, MessageBoxIcon.Question);
-            if (result == DialogResult.Yes)
-            {
-                TabberReflectPro tabberReflectPro = new TabberReflectPro();
+            SaveDataGridViewData();
 
-                foreach (Form f in Application.OpenForms)
+            TabberReflectPro tabberReflectPro = new TabberReflectPro();
+
+            foreach (Form f in Application.OpenForms)
+            {
+                if (f.Text == "Tabber Insights")
                 {
-                    if (f.Text == "Tabber Insights")
-                    {
-                        f.Controls.Add(tabberReflectPro);
-                        tabberReflectPro.Dock = DockStyle.Fill;
-                        f.Controls.Remove(this);
-                    }
+                    f.Controls.Add(tabberReflectPro);
+                    tabberReflectPro.Dock = DockStyle.Fill;
+                    f.Controls.Remove(this);
                 }
             }
-            else { }
         }
         private void HomeButton_Click(object sender, EventArgs e)
         {
+            SaveDataGridViewData();
+
             HomePage home = new HomePage();
 
             foreach (Form f in Application.OpenForms)
@@ -241,5 +254,126 @@ namespace Tabber_Insights.Tabber_Tasks
             }
         }
         #endregion
+
+
+        private void SaveDataGridViewData()
+        {
+            string fileName = "TabberListData.List";
+            string filePath = Path.Combine(Application.StartupPath, fileName);
+
+            if (File.Exists(filePath))
+            {
+                using (BinaryWriter bw = new BinaryWriter(File.Open(filePath, FileMode.Create)))
+                {
+                    bw.Write(List.Columns.Count);
+                    bw.Write(List.Rows.Count);
+                    foreach (DataGridViewRow dgvR in List.Rows)
+                    {
+                        for (int j = 0; j < List.Columns.Count; ++j)
+                        {
+                            object val = dgvR.Cells[j].Value;
+                            if (val == null)
+                            {
+                                bw.Write(false);
+                                bw.Write(false);
+                            }
+                            else
+                            {
+                                bw.Write(true);
+                                bw.Write(val.ToString());
+                            }
+                        }
+                    }
+                }
+
+                ListNameLabel.Text = System.IO.Path.GetFileNameWithoutExtension(filePath) + " ";
+            }
+            else
+            {
+                File.Create(filePath).Close();
+            }
+        }
+
+
+
+        private void TabberListsPro_Load(object sender, EventArgs e)
+        {
+            List.AllowUserToAddRows = false;
+            
+            string fileName = "TabberListData.List";
+            string filePath = Path.Combine(Application.StartupPath, fileName);
+
+            if (File.Exists(filePath))
+            {
+                if (new FileInfo(filePath).Length == 0)
+                {
+                    Console.WriteLine("The file is empty.");
+                }
+                else 
+                {
+                    using (BinaryReader bw = new BinaryReader(File.Open(filePath, FileMode.Open)))
+                    {
+                        int n = bw.ReadInt32();
+                        int m = bw.ReadInt32();
+                        for (int i = 0; i < m; ++i)
+                        {
+                            List.Rows.Add();
+                            for (int j = 0; j < n; ++j)
+                            {
+                                try
+                                {
+                                    if (bw.ReadBoolean())
+                                    {
+                                        try
+                                        {
+                                            List.Rows[i].Cells[j].Value = bw.ReadString();
+                                        }
+                                        catch
+                                        {
+
+                                        }
+                                    }
+                                    else bw.ReadBoolean();
+                                }
+                                catch
+                                {
+
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // Commit the new row
+                List.EndEdit();
+            }
+            else
+            {
+                File.Create(filePath).Close();
+                SaveDataGridViewData();
+                
+            }
+            if (List.Rows.Count > 0)
+            {
+                DataGridViewRow lastRow = List.Rows[List.Rows.Count - 1];
+                bool isLastRowEmpty = true;
+                for (int i = 0; i < lastRow.Cells.Count; i++)
+                {
+                    if (lastRow.Cells[i].Value != null)
+                    {
+                        isLastRowEmpty = false;
+                        break;
+                    }
+                }
+
+                // Remove the last row if it is empty
+                if (isLastRowEmpty)
+                {
+                    List.Rows.RemoveAt(List.Rows.Count - 1);
+                }
+            }
+
+            List.AllowUserToAddRows = true;
+        }
     }
 }

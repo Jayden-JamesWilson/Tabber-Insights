@@ -57,4 +57,8 @@
     <PackageReference Include="Uno.UI" Version="4.7.37" />
   </ItemGroup>
 
+  <ItemGroup>
+    <SourceGeneratorInput Remove="TabberLists.mdf" />
+  </ItemGroup>
+
 </Project>
