@@ -63,6 +63,16 @@ namespace Tabber_Insights.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _5_Tabber_Insights {
+            get {
+                object obj = ResourceManager.GetObject("5.Tabber Insights", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Be_Healthy_25px {
             get {
                 object obj = ResourceManager.GetObject("Be Healthy 25px", resourceCulture);
@@ -226,6 +236,16 @@ namespace Tabber_Insights.Properties {
         internal static System.Drawing.Bitmap Home_40px {
             get {
                 object obj = ResourceManager.GetObject("Home 40px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Import_32px {
+            get {
+                object obj = ResourceManager.GetObject("Import 32px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -517,6 +537,16 @@ namespace Tabber_Insights.Properties {
             get {
                 object obj = ResourceManager.GetObject("Tabber-Insights", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Tabber_Insights_96px {
+            get {
+                object obj = ResourceManager.GetObject("Tabber Insights 96px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

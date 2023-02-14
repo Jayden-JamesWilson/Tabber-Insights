@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EVuPh3Ut/Zkjhsyw18qeuZGg1f+FR76Kte5xl2czEN3ZU6Xhfzw9egIdSd9oqnD/qAjqgVFT+qEKGtNNhN1x1Q==",
+  "dgSpecHash": "tFV0r7xC8RRd8z91ro25gIRNJ76Ak637/TPHSsSPobrTqH75WzB/BtEmrE8EGuRcFWH3GgwSd9yrI7dwOhQZfA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\JTech\\OneDrive\\Applications\\Tabber Insights\\Project\\Tabber-Insights\\Tabber Insights\\Tabber Insights.csproj",
+  "projectFilePath": "C:\\Users\\JTech\\OneDrive\\Applications\\Tabber\\Tabber Insights\\Project\\Tabber-Insights\\Tabber Insights\\Tabber Insights.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\JTech\\.nuget\\packages\\metromodernui\\1.4.0\\metromodernui.1.4.0.nupkg.sha512",
     "C:\\Users\\JTech\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",

@@ -145,14 +145,8 @@
   <data name="Save 32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Save 32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Tabber-Focus-Work" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Tabber-Focus-Work.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Close 24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Close 24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Play 24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Play 24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Sad_35px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sad 35px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,14 +154,17 @@
   <data name="Unhappy_35px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Unhappy 35px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Tabber Focus 32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tabber Focus 32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Personal 25px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Personal 25px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Stop 24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Stop 24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SaveAs 40px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SaveAs 40px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Work 25px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Work 25px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Tabber Focus 25px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Tabber Focus 25px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -178,23 +175,14 @@
   <data name="Tabber Focus - Break" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\7.1.Tabber Focus - Break.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Priority 25px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Priority 25px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Tabber Reflect 25px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Tabber Reflect 25px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Help Others 25px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Help Others 25px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Save 30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Save 30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Home 40px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Home 40px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Complete In-Active 24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Complete In-Active 24px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Neutral_35px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Neutral 35px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Tabber Lists 40px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Tabber Lists 40px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -202,14 +190,17 @@
   <data name="Tabber Lists 25px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Tabber Lists 25px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Save 24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Save 24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Text 25px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Text 25px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Happy_35px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Happy 35px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Be Healthy 25px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Be Healthy 25px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Happy_35px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Happy 35px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Save 24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Save 24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Open 32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Open 32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -217,29 +208,35 @@
   <data name="Tabber-Focus" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Tabber-Focus.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Connect 25px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Connect 25px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Collapse Arrow 24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Collapse Arrow 24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Home 25px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Home 25px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Connect 25px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Connect 25px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Priority 25px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Priority 25px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Help Others 25px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Help Others 25px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Status 25px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Status 25px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tabber Reflect 25px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tabber Reflect 25px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Complete Active 24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Complete Active 24px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Tabber Focus 32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Tabber Focus 32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="DropDown Arrow 20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DropDown Arrow 20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Choice 25px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Choice 25px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Text 25px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Text 25px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SaveAs 40px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SaveAs 40px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Very_Happy_35px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Very Happy 35px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -247,20 +244,26 @@
   <data name="Work 32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Work 32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Tabber Lists 32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tabber Lists 32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Tabber Focus 40px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Tabber Focus 40px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Tabber Goals 25px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Tabber Goals 25px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Work 25px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Work 25px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Home 40px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Home 40px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Clear 32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Clear 32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DropDown Arrow 20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DropDown Arrow 20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Neutral_35px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Neutral 35px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="5.Tabber Insights" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5.Tabber Insights.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Education 25px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Education 25px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -268,8 +271,8 @@
   <data name="Expand Arrow 24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Expand Arrow 24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Tabber Lists 32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Tabber Lists 32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Tabber-Focus-Work" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tabber-Focus-Work.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Save 40px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Save 40px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -280,16 +283,22 @@
   <data name="Tips 25px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Tips 25px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Import 32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Import 32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Tabber-Goals" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Tabber-Goals.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Education 32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Education 32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="New Education 25px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\New Education 25px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Status 25px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Status 25px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Play 24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Play 24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Education 32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Education 32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Tabber Insights 96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tabber Insights 96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

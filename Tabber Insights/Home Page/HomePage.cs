@@ -112,6 +112,19 @@ namespace Tabber_Insights.Home_Page
             GoalTitle1.Text = Properties.Settings.Default.TabberGoalTitles[0];
             GoalTitle2.Text = Properties.Settings.Default.TabberGoalTitles[1];
             GoalTitle3.Text = Properties.Settings.Default.TabberGoalTitles[2];
+
+            if(GoalTitle1.Text == "")
+            {
+                GoalTitle1.Text = "Goal Title 1";
+            }
+            if (GoalTitle2.Text == "")
+            {
+                GoalTitle2.Text = "Goal Title 2";
+            }
+            if (GoalTitle3.Text == "")
+            {
+                GoalTitle3.Text = "Goal Title 3";
+            }
             #endregion
 
             #region Focus Lifetime Minutes
@@ -127,6 +140,13 @@ namespace Tabber_Insights.Home_Page
                 ClearFocusMinutesButton.Enabled = false;
             }
             #endregion
+        }
+        #endregion
+
+        #region Overrides
+        private void HomePage_Resize(object sender, EventArgs e)
+        {
+            this.Refresh();
         }
         #endregion
 
@@ -190,6 +210,7 @@ namespace Tabber_Insights.Home_Page
         }
         #endregion
 
+        #region Tabber Focus 
         private void StartButton_Click(object sender, EventArgs e)
         {
             StartButton.Enabled = false;
@@ -305,7 +326,9 @@ namespace Tabber_Insights.Home_Page
                 }
             }
         }
+        #endregion
 
+        #region Tabber Reflect
         private void ClearFocusMinutesButton_Click(object sender, EventArgs e)
         {
             Properties.Settings.Default.TotalFocusSeconds = 0;
@@ -314,12 +337,9 @@ namespace Tabber_Insights.Home_Page
             TotalFocusMinutes.Text = "0";
             ClearFocusMinutesButton.Enabled = false;
         }
+        #endregion
 
-        private void HomePage_Resize(object sender, EventArgs e)
-        {
-            this.Refresh();
-        }
-
+        #region Save/Load XML Data
         private void SaveValues()
         {
             SaveFileDialog saveFileDialog = new SaveFileDialog();
@@ -426,8 +446,9 @@ namespace Tabber_Insights.Home_Page
         private void LoadValues()
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "XML files (*.xml)|*.xml";
-            openFileDialog.Title = "Open User Settings";
+            openFileDialog.Filter = "Tabber Insights Files (*.insights)|*.insights";
+            openFileDialog.Title = "Open Tabber Insights Data";
+
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
@@ -567,9 +588,87 @@ namespace Tabber_Insights.Home_Page
             LoadValues();
         }
 
-        private void SaveDataButton_Click(object sender, EventArgs e)
+        #endregion
+
+        private void OpenButton_Click(object sender, EventArgs e)
         {
-            SaveValues();   
+            LoadValues();
+
+            #region Calculations
+            int FeelingRounded = (int)Feeling * 6;
+            #endregion
+
+            #region Last Reflection Log
+            if (LastLog != "")
+            {
+                ReflectionEntry.Text = LastLog;
+            }
+            else
+            {
+                ReflectionEntry.Text = "No Entries Added";
+            }
+            #endregion
+
+            #region Reflection Score
+            if (FeelingRounded < 1)
+            {
+                FeelingScore.Width = 6;
+                FeelingScore.BackColor = CustomRed;
+            }
+            else if (FeelingRounded >= 1 && FeelingRounded <= 100)
+            {
+                FeelingScore.Width = FeelingRounded;
+                FeelingScore.BackColor = CustomRed;
+            }
+            else if (FeelingRounded > 100 && FeelingRounded <= 200)
+            {
+                FeelingScore.Width = FeelingRounded;
+                FeelingScore.BackColor = CustomOrange;
+            }
+            else if (FeelingRounded > 200 && FeelingRounded <= 300)
+            {
+                FeelingScore.Width = FeelingRounded;
+                FeelingScore.BackColor = CustomGreen;
+            }
+            else
+            {
+                FeelingScore.Width = FeelingRounded;
+                FeelingScore.BackColor = CustomGreen;
+            }
+            #endregion
+
+            #region Goals
+            GoalTitle1.Text = Properties.Settings.Default.TabberGoalTitles[0];
+            GoalTitle2.Text = Properties.Settings.Default.TabberGoalTitles[1];
+            GoalTitle3.Text = Properties.Settings.Default.TabberGoalTitles[2];
+
+            if (GoalTitle1.Text == "")
+            {
+                GoalTitle1.Text = "Goal Title 1";
+            }
+            if (GoalTitle2.Text == "")
+            {
+                GoalTitle2.Text = "Goal Title 2";
+            }
+            if (GoalTitle3.Text == "")
+            {
+                GoalTitle3.Text = "Goal Title 3";
+            }
+            #endregion
+
+            #region Focus Lifetime Minutes
+            int TotalMinutes = Properties.Settings.Default.TotalFocusSeconds / 60;
+            this.TotalFocusMinutes.Text = $"{TotalMinutes} Minutes";
+
+            if (TotalMinutes > 0)
+            {
+                ClearFocusMinutesButton.Enabled = true;
+            }
+            else
+            {
+                ClearFocusMinutesButton.Enabled = false;
+            }
+            #endregion
         }
     }
 }

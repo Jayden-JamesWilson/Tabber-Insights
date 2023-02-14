@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.SidePanel = new Tabber_Insights.RoundFluentPanel();
-            this.OpenDataButton = new Tabber_Insights.RoundFluentButton();
             this.roundFluentButton1 = new Tabber_Insights.RoundFluentButton();
             this.TabberListsButton = new Tabber_Insights.RoundFluentButton();
             this.StatusPanel = new Tabber_Insights.RoundFluentPanel();
@@ -38,6 +37,7 @@
             this.TabberGoalsButton = new Tabber_Insights.RoundFluentButton();
             this.TabberReflectButton = new Tabber_Insights.RoundFluentButton();
             this.TitleBar = new Tabber_Insights.RoundFluentPanel();
+            this.OpenButton = new Tabber_Insights.RoundFluentButton();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.roundFluentPanel1 = new Tabber_Insights.RoundFluentPanel();
@@ -76,7 +76,7 @@
             this.TotalFocusMinutes = new System.Windows.Forms.Label();
             this.roundFluentPanel8 = new Tabber_Insights.RoundFluentPanel();
             this.ClearFocusMinutesButton = new Tabber_Insights.RoundFluentButton();
-            this.SaveDataButton = new Tabber_Insights.RoundFluentButton();
+            this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.SidePanel.SuspendLayout();
             this.TitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -119,27 +119,6 @@
             this.SidePanel.TabIndex = 4;
             this.SidePanel.Text = "Fluent Panel";
             this.SidePanel.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
-            // 
-            // OpenDataButton
-            // 
-            this.OpenDataButton.BackColor = System.Drawing.Color.White;
-            this.OpenDataButton.BackgroundColor = System.Drawing.Color.White;
-            this.OpenDataButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
-            this.OpenDataButton.BorderRadius = 5;
-            this.OpenDataButton.BorderSize = 1;
-            this.OpenDataButton.FlatAppearance.BorderSize = 0;
-            this.OpenDataButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.OpenDataButton.Font = new System.Drawing.Font("Segoe UI Variable Display", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.OpenDataButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
-            this.OpenDataButton.Image = global::Tabber_Insights.Properties.Resources.Tabber_Lists_32px;
-            this.OpenDataButton.Location = new System.Drawing.Point(805, 303);
-            this.OpenDataButton.Margin = new System.Windows.Forms.Padding(4);
-            this.OpenDataButton.Name = "OpenDataButton";
-            this.OpenDataButton.Size = new System.Drawing.Size(50, 50);
-            this.OpenDataButton.TabIndex = 25;
-            this.OpenDataButton.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
-            this.OpenDataButton.UseVisualStyleBackColor = false;
-            this.OpenDataButton.Click += new System.EventHandler(this.OpenDataButton_Click);
             // 
             // roundFluentButton1
             // 
@@ -272,6 +251,7 @@
             this.TitleBar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
             this.TitleBar.BorderRadius = 7;
             this.TitleBar.BorderSize = 1;
+            this.TitleBar.Controls.Add(this.OpenButton);
             this.TitleBar.Controls.Add(this.label1);
             this.TitleBar.Controls.Add(this.pictureBox1);
             this.TitleBar.Font = new System.Drawing.Font("Segoe UI Variable Display", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -283,6 +263,28 @@
             this.TitleBar.TabIndex = 10;
             this.TitleBar.Text = "Fluent Panel";
             this.TitleBar.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
+            // 
+            // OpenButton
+            // 
+            this.OpenButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.OpenButton.BackColor = System.Drawing.Color.White;
+            this.OpenButton.BackgroundColor = System.Drawing.Color.White;
+            this.OpenButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.OpenButton.BorderRadius = 5;
+            this.OpenButton.BorderSize = 1;
+            this.OpenButton.FlatAppearance.BorderSize = 0;
+            this.OpenButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OpenButton.Font = new System.Drawing.Font("Segoe UI Variable Display", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.OpenButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
+            this.OpenButton.Image = global::Tabber_Insights.Properties.Resources.Import_32px;
+            this.OpenButton.Location = new System.Drawing.Point(1079, 6);
+            this.OpenButton.Name = "OpenButton";
+            this.OpenButton.Size = new System.Drawing.Size(37, 37);
+            this.OpenButton.TabIndex = 30;
+            this.OpenButton.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
+            this.ToolTip.SetToolTip(this.OpenButton, "Import Tabber Insights Data");
+            this.OpenButton.UseVisualStyleBackColor = false;
+            this.OpenButton.Click += new System.EventHandler(this.OpenButton_Click);
             // 
             // label1
             // 
@@ -765,7 +767,7 @@
             this.label11.ForeColor = System.Drawing.Color.Gray;
             this.label11.Location = new System.Drawing.Point(5, 60);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(316, 24);
+            this.label11.Size = new System.Drawing.Size(245, 24);
             this.label11.TabIndex = 22;
             this.label11.Text = "Time Focusing";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -782,7 +784,7 @@
             this.roundFluentPanel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
             this.roundFluentPanel9.Location = new System.Drawing.Point(10, 93);
             this.roundFluentPanel9.Name = "roundFluentPanel9";
-            this.roundFluentPanel9.Size = new System.Drawing.Size(311, 36);
+            this.roundFluentPanel9.Size = new System.Drawing.Size(240, 36);
             this.roundFluentPanel9.TabIndex = 25;
             this.roundFluentPanel9.Text = "Fluent Panel";
             this.roundFluentPanel9.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
@@ -795,7 +797,7 @@
             this.TotalFocusMinutes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.TotalFocusMinutes.Location = new System.Drawing.Point(5, 2);
             this.TotalFocusMinutes.Name = "TotalFocusMinutes";
-            this.TotalFocusMinutes.Size = new System.Drawing.Size(305, 29);
+            this.TotalFocusMinutes.Size = new System.Drawing.Size(232, 29);
             this.TotalFocusMinutes.TabIndex = 21;
             this.TotalFocusMinutes.Text = "1 Minutes";
             this.TotalFocusMinutes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -815,9 +817,9 @@
             this.roundFluentPanel8.Font = new System.Drawing.Font("Segoe UI Variable Display", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.roundFluentPanel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
             this.roundFluentPanel8.Location = new System.Drawing.Point(805, 103);
-            this.roundFluentPanel8.Margin = new System.Windows.Forms.Padding(7, 7, 3, 3);
+            this.roundFluentPanel8.Margin = new System.Windows.Forms.Padding(7, 7, 3, 7);
             this.roundFluentPanel8.Name = "roundFluentPanel8";
-            this.roundFluentPanel8.Size = new System.Drawing.Size(331, 185);
+            this.roundFluentPanel8.Size = new System.Drawing.Size(260, 185);
             this.roundFluentPanel8.TabIndex = 14;
             this.roundFluentPanel8.Text = "Fluent Panel";
             this.roundFluentPanel8.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
@@ -838,40 +840,17 @@
             this.ClearFocusMinutesButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
             this.ClearFocusMinutesButton.Location = new System.Drawing.Point(10, 138);
             this.ClearFocusMinutesButton.Name = "ClearFocusMinutesButton";
-            this.ClearFocusMinutesButton.Size = new System.Drawing.Size(311, 36);
+            this.ClearFocusMinutesButton.Size = new System.Drawing.Size(240, 36);
             this.ClearFocusMinutesButton.TabIndex = 26;
             this.ClearFocusMinutesButton.Text = "Clear";
             this.ClearFocusMinutesButton.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
             this.ClearFocusMinutesButton.UseVisualStyleBackColor = false;
             this.ClearFocusMinutesButton.Click += new System.EventHandler(this.ClearFocusMinutesButton_Click);
             // 
-            // SaveDataButton
-            // 
-            this.SaveDataButton.BackColor = System.Drawing.Color.White;
-            this.SaveDataButton.BackgroundColor = System.Drawing.Color.White;
-            this.SaveDataButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
-            this.SaveDataButton.BorderRadius = 5;
-            this.SaveDataButton.BorderSize = 1;
-            this.SaveDataButton.FlatAppearance.BorderSize = 0;
-            this.SaveDataButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SaveDataButton.Font = new System.Drawing.Font("Segoe UI Variable Display", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.SaveDataButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
-            this.SaveDataButton.Image = global::Tabber_Insights.Properties.Resources.Tabber_Lists_32px;
-            this.SaveDataButton.Location = new System.Drawing.Point(863, 303);
-            this.SaveDataButton.Margin = new System.Windows.Forms.Padding(4);
-            this.SaveDataButton.Name = "SaveDataButton";
-            this.SaveDataButton.Size = new System.Drawing.Size(50, 50);
-            this.SaveDataButton.TabIndex = 26;
-            this.SaveDataButton.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
-            this.SaveDataButton.UseVisualStyleBackColor = false;
-            this.SaveDataButton.Click += new System.EventHandler(this.SaveDataButton_Click);
-            // 
             // HomePage
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.Controls.Add(this.SaveDataButton);
-            this.Controls.Add(this.OpenDataButton);
             this.Controls.Add(this.roundFluentPanel8);
             this.Controls.Add(this.roundFluentPanel5);
             this.Controls.Add(this.GoalsPanel);
@@ -955,7 +934,7 @@
         private Label TotalFocusMinutes;
         private RoundFluentPanel roundFluentPanel8;
         private RoundFluentButton ClearFocusMinutesButton;
-        private RoundFluentButton OpenDataButton;
-        private RoundFluentButton SaveDataButton;
+        private RoundFluentButton OpenButton;
+        private ToolTip ToolTip;
     }
 }

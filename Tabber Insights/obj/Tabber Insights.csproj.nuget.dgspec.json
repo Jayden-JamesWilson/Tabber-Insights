@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\JTech\\OneDrive\\Applications\\Tabber Insights\\Project\\Tabber-Insights\\Tabber Insights\\Tabber Insights.csproj": {}
+    "C:\\Users\\JTech\\OneDrive\\Applications\\Tabber\\Tabber Insights\\Project\\Tabber-Insights\\Tabber Insights\\Tabber Insights.csproj": {}
   },
   "projects": {
-    "C:\\Users\\JTech\\OneDrive\\Applications\\Tabber Insights\\Project\\Tabber-Insights\\Tabber Insights\\Tabber Insights.csproj": {
+    "C:\\Users\\JTech\\OneDrive\\Applications\\Tabber\\Tabber Insights\\Project\\Tabber-Insights\\Tabber Insights\\Tabber Insights.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JTech\\OneDrive\\Applications\\Tabber Insights\\Project\\Tabber-Insights\\Tabber Insights\\Tabber Insights.csproj",
+        "projectUniqueName": "C:\\Users\\JTech\\OneDrive\\Applications\\Tabber\\Tabber Insights\\Project\\Tabber-Insights\\Tabber Insights\\Tabber Insights.csproj",
         "projectName": "Tabber Insights",
-        "projectPath": "C:\\Users\\JTech\\OneDrive\\Applications\\Tabber Insights\\Project\\Tabber-Insights\\Tabber Insights\\Tabber Insights.csproj",
+        "projectPath": "C:\\Users\\JTech\\OneDrive\\Applications\\Tabber\\Tabber Insights\\Project\\Tabber-Insights\\Tabber Insights\\Tabber Insights.csproj",
         "packagesPath": "C:\\Users\\JTech\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JTech\\OneDrive\\Applications\\Tabber Insights\\Project\\Tabber-Insights\\Tabber Insights\\obj\\",
+        "outputPath": "C:\\Users\\JTech\\OneDrive\\Applications\\Tabber\\Tabber Insights\\Project\\Tabber-Insights\\Tabber Insights\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

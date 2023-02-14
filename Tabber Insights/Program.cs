@@ -1,4 +1,5 @@
 using System.Configuration;
+using Tabber_Insights.Loading_Screen;
 using Tabber_Insights.Properties;
 
 namespace Tabber_Insights
@@ -20,7 +21,7 @@ namespace Tabber_Insights
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TabberInsights());
+            Application.Run(new LoadingScreen());
         }
 
         [System.Runtime.InteropServices.DllImport("user32.dll")]
