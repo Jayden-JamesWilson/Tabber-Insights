@@ -13,10 +13,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Tabber-Insights-Data-File-48px.ico" />
     <None Remove="Tabber-Insights.ico" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Tabber-Insights-Data-File-48px.ico" />
     <Content Include="Tabber-Insights.ico" />
   </ItemGroup>
 
