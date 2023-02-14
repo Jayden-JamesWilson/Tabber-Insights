@@ -1,5 +1,6 @@
 using System.Runtime.InteropServices;
 using System.Xml;
+using Tabber_Insights.Home_Page;
 using Tabber_Insights.Tabber_Focus;
 
 namespace Tabber_Insights
@@ -10,9 +11,9 @@ namespace Tabber_Insights
         {
             InitializeComponent();
 
-            TabberGoalsPro Tabber_Goals_Pro = new TabberGoalsPro();
-            this.Controls.Add(Tabber_Goals_Pro);
-            Tabber_Goals_Pro.Dock = DockStyle.Fill;
+            HomePage home = new HomePage();
+            this.Controls.Add(home);
+            home.Dock = DockStyle.Fill;
 
             
         }
@@ -20,7 +21,6 @@ namespace Tabber_Insights
         private void Form1_ResizeBegin(object sender, EventArgs e)
         {
             this.Refresh();
-            Properties.Settings.Default.Upgrade();
         }
 
         #region Save/Load XML Data
