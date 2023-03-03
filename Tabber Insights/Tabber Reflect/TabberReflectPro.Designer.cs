@@ -691,7 +691,6 @@
             this.TipsPane.TabIndex = 13;
             this.TipsPane.Text = "Fluent Panel";
             this.TipsPane.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
-            this.TipsPane.Visible = false;
             // 
             // roundFluentPanel5
             // 

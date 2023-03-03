@@ -33,8 +33,7 @@
             // 
             // TabberInsights
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
             this.ClientSize = new System.Drawing.Size(1267, 653);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -44,6 +43,7 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.TabberInsights_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.TabberInsights_FormClosed);
             this.ResizeBegin += new System.EventHandler(this.Form1_ResizeBegin);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.TabberInsights_Paint);
             this.ResumeLayout(false);
 
         }

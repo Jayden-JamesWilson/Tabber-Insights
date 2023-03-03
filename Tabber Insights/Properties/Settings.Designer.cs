@@ -97,18 +97,6 @@ namespace Tabber_Insights.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("30")]
-        public int FocusPeriodMinutes {
-            get {
-                return ((int)(this["FocusPeriodMinutes"]));
-            }
-            set {
-                this["FocusPeriodMinutes"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
         public int BreakPeriodMinutes {
             get {
@@ -128,18 +116,6 @@ namespace Tabber_Insights.Properties {
             }
             set {
                 this["ReflectionLogs"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("25")]
-        public int ReflectionScore {
-            get {
-                return ((int)(this["ReflectionScore"]));
-            }
-            set {
-                this["ReflectionScore"] = value;
             }
         }
         
@@ -176,6 +152,42 @@ namespace Tabber_Insights.Properties {
             }
             set {
                 this["UpgradeRequired"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int ReflectionScore {
+            get {
+                return ((int)(this["ReflectionScore"]));
+            }
+            set {
+                this["ReflectionScore"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("27")]
+        public int FocusPeriodMinutes {
+            get {
+                return ((int)(this["FocusPeriodMinutes"]));
+            }
+            set {
+                this["FocusPeriodMinutes"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public string ReflectionCount {
+            get {
+                return ((string)(this["ReflectionCount"]));
+            }
+            set {
+                this["ReflectionCount"] = value;
             }
         }
     }

@@ -20,7 +20,6 @@ namespace Tabber_Insights.Tabber_Reflect
         
         #region Constructor 
         public string? Feeling = "";
-        public int Counter = Settings.Default.ReflectionScore;
 
         public TabberReflectPro()
         {
@@ -42,62 +41,67 @@ namespace Tabber_Insights.Tabber_Reflect
                 ClearLogsButton.Enabled = true;
                 ClearLogsButton.BackColor = Color.White;
 
-                #region Counter Validation
-                if (Counter >= 0)
-                {
-                    if (Counter <= 5 && Counter >= 1)
+                #region Settings.Default.ReflectionScore Validation
+                
+                
+                    if (Settings.Default.ReflectionScore <= 5 && Settings.Default.ReflectionScore >= 1)
                     {
-                        TipsPane.Visible = false;
                         if (Feeling == "Sad")
                         {
-                            Counter = Counter - 3;
+                            Settings.Default.ReflectionScore = Settings.Default.ReflectionScore - 3;
+                            Settings.Default.Save();
                         }
                         if (Feeling == "Unhappy")
                         {
-                            Counter = Counter - 2;
+                            Settings.Default.ReflectionScore = Settings.Default.ReflectionScore - 2;
+                            Settings.Default.Save();
                         }
                         if (Feeling == "Neutral")
                         {
-                            Counter = Counter + 0;
+                            Settings.Default.ReflectionScore = Settings.Default.ReflectionScore + 0;
+                            Settings.Default.Save();
                         }
                         if (Feeling == "Happy")
                         {
-                            Counter = Counter + 1;
+                            Settings.Default.ReflectionScore = Settings.Default.ReflectionScore + 1;
+                            Settings.Default.Save();
                         }
                         if (Feeling == "Very Happy")
                         {
-                            Counter = Counter + 2;
+                            Settings.Default.ReflectionScore = Settings.Default.ReflectionScore + 2;
+                            Settings.Default.Save();
                         }
                     }
                     else
                     {
-                        TipsPane.Visible = false;
                         if (Feeling == "Sad")
                         {
-                            Counter = Counter -3;
+                            Settings.Default.ReflectionScore = Settings.Default.ReflectionScore -3;
+                            Settings.Default.Save();
                         }
                         if (Feeling == "Unhappy")
                         {
-                            Counter = Counter -2;
+                            Settings.Default.ReflectionScore = Settings.Default.ReflectionScore -2;
+                            Settings.Default.Save();
                         }
                         if (Feeling == "Neutral")
                         {
-                            Counter = Counter +0;
+                            Settings.Default.ReflectionScore = Settings.Default.ReflectionScore +0;
+                            Settings.Default.Save();
                         }
                         if (Feeling == "Happy")
                         {
-                            Counter = Counter + 1;
+                            Settings.Default.ReflectionScore = Settings.Default.ReflectionScore + 1;
+                            Settings.Default.Save();
                         }
                         if (Feeling == "Very Happy")
                         {
-                            Counter = Counter + 2;
+                            Settings.Default.ReflectionScore = Settings.Default.ReflectionScore + 2;
+                            Settings.Default.Save();
                         }
                     }
-                }
-                else
-                {
-                    Counter = 0;
-                }
+                 
+
                 #endregion
             }
         }
@@ -126,7 +130,7 @@ namespace Tabber_Insights.Tabber_Reflect
         public void SaveReflection()
         {
             Settings.Default.ReflectionLogs = ReflectionLogs.Text;
-            Settings.Default.ReflectionScore = Counter;
+            Settings.Default.ReflectionScore = Settings.Default.ReflectionScore;
             Settings.Default.Save();
         }
         #endregion
@@ -139,62 +143,66 @@ namespace Tabber_Insights.Tabber_Reflect
 
             if(Feeling != "" && ReflectionNoteTextBox.Text != "")
             {
-                #region Counter Validation
-                if (Counter >= 0)
-                {
-                    if (Counter <= 5 && Counter >= 1)
+                #region Settings.Default.ReflectionScore Validation
+
+                    if (Settings.Default.ReflectionScore <= 5 && Settings.Default.ReflectionScore >= 1)
                     {
-                        TipsPane.Visible = false;
                         if (Feeling == "Sad")
                         {
-                            Counter = Counter - 3;
+                            Settings.Default.ReflectionScore = Settings.Default.ReflectionScore - 3;
+                            Settings.Default.Save();
                         }
                         if (Feeling == "Unhappy")
                         {
-                            Counter = Counter - 2;
+                            Settings.Default.ReflectionScore = Settings.Default.ReflectionScore - 2;
+                            Settings.Default.Save();
                         }
                         if (Feeling == "Neutral")
                         {
-                            Counter = Counter + 0;
+                            Settings.Default.ReflectionScore = Settings.Default.ReflectionScore + 0;
+                            Settings.Default.Save();
                         }
                         if (Feeling == "Happy")
                         {
-                            Counter = Counter + 1;
+                            Settings.Default.ReflectionScore = Settings.Default.ReflectionScore + 1;
+                            Settings.Default.Save();
                         }
                         if (Feeling == "Very Happy")
                         {
-                            Counter = Counter + 2;
+                            Settings.Default.ReflectionScore = Settings.Default.ReflectionScore + 2;
+                            Settings.Default.Save();
                         }
                     }
                     else
                     {
-                        TipsPane.Visible = false;
+
                         if (Feeling == "Sad")
                         {
-                            Counter = Counter - 3;
+                            Settings.Default.ReflectionScore = Settings.Default.ReflectionScore - 3;
+                            Settings.Default.Save();
                         }
                         if (Feeling == "Unhappy")
                         {
-                            Counter = Counter - 2;
+                            Settings.Default.ReflectionScore = Settings.Default.ReflectionScore - 2;
+                            Settings.Default.Save();
                         }
                         if (Feeling == "Neutral")
                         {
-                            Counter = Counter + 0;
+                            Settings.Default.ReflectionScore = Settings.Default.ReflectionScore + 0;
+                            Settings.Default.Save();
                         }
                         if (Feeling == "Happy")
                         {
-                            Counter = Counter + 1;
+                            Settings.Default.ReflectionScore = Settings.Default.ReflectionScore + 1;
+                            Settings.Default.Save();
                         }
                         if (Feeling == "Very Happy")
                         {
-                            Counter = Counter + 2;
+                            Settings.Default.ReflectionScore = Settings.Default.ReflectionScore + 2;
+                            Settings.Default.Save();
                         }
                     }
-                }
-                else
-                {
-                    Counter = 0;
-                }
+                
                 #endregion
 
                 ReflectionLogs.Text = ReflectionLogs.Text.Insert(0, $"{DateTime.Now}\n{ReflectionNoteTextBox.Text}\n{Feeling}\n\n");
@@ -212,62 +220,55 @@ namespace Tabber_Insights.Tabber_Reflect
             }
             else if (Feeling != "" && ReflectionNoteTextBox.Text == "")
             {
-                #region Counter Validation
-                if (Counter >= 0)
-                {
-                    if (Counter <= 5 && Counter >= 1)
+                #region Settings.Default.ReflectionScore Validation
+                    if (Settings.Default.ReflectionScore <= 5 && Settings.Default.ReflectionScore >= 1)
                     {
-                        TipsPane.Visible = false;
                         if (Feeling == "Sad")
                         {
-                            Counter = Counter - 3;
+                            Settings.Default.ReflectionScore = Settings.Default.ReflectionScore - 3;
                         }
                         if (Feeling == "Unhappy")
                         {
-                            Counter = Counter - 2;
+                            Settings.Default.ReflectionScore = Settings.Default.ReflectionScore - 2;
                         }
                         if (Feeling == "Neutral")
                         {
-                            Counter = Counter + 0;
+                            Settings.Default.ReflectionScore = Settings.Default.ReflectionScore + 0;
                         }
                         if (Feeling == "Happy")
                         {
-                            Counter = Counter + 1;
+                            Settings.Default.ReflectionScore = Settings.Default.ReflectionScore + 1;
                         }
                         if (Feeling == "Very Happy")
                         {
-                            Counter = Counter + 2;
+                            Settings.Default.ReflectionScore = Settings.Default.ReflectionScore + 2;
                         }
                     }
                     else
                     {
-                        TipsPane.Visible = false;
                         if (Feeling == "Sad")
                         {
-                            Counter = Counter - 3;
+                            Settings.Default.ReflectionScore = Settings.Default.ReflectionScore - 3;
                         }
                         if (Feeling == "Unhappy")
                         {
-                            Counter = Counter - 2;
+                            Settings.Default.ReflectionScore = Settings.Default.ReflectionScore - 2;
                         }
                         if (Feeling == "Neutral")
                         {
-                            Counter = Counter + 0;
+                            Settings.Default.ReflectionScore = Settings.Default.ReflectionScore + 0;
                         }
                         if (Feeling == "Happy")
                         {
-                            Counter = Counter + 1;
+                            Settings.Default.ReflectionScore = Settings.Default.ReflectionScore + 1;
                         }
                         if (Feeling == "Very Happy")
                         {
-                            Counter = Counter + 2;
+                            Settings.Default.ReflectionScore = Settings.Default.ReflectionScore + 2;
                         }
                     }
-                }
-                else
-                {
-                    Counter = 0;
-                }
+                
+
                 #endregion
 
                 ReflectionLogs.Text = ReflectionLogs.Text.Insert(0, $"{DateTime.Now}\n{Feeling}\n\n");
@@ -301,13 +302,13 @@ namespace Tabber_Insights.Tabber_Reflect
             if (result == DialogResult.Yes)
             {
                 ReflectionLogs.Clear();
-                Settings.Default.ReflectionScore = 25;
+                Settings.Default.ReflectionScore = 0;
                 Settings.Default.ReflectionLogs = "";
+                Settings.Default.LastReflectionLog = "";
                 Settings.Default.Save();
 
                 ClearLogsButton.Enabled = false;
                 ClearLogsButton.BackColor = Color.FromArgb(249, 249, 249);
-                TipsPane.Visible = false;
             }
             else
             {

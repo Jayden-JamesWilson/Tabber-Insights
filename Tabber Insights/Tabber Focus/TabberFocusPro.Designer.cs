@@ -37,6 +37,7 @@
             this.TabberGoalsButton = new Tabber_Insights.RoundFluentButton();
             this.TabberReflectButton = new Tabber_Insights.RoundFluentButton();
             this.GoalsPanel = new Tabber_Insights.RoundFluentPanel();
+            this.ClearGoalsButton = new Tabber_Insights.RoundFluentButton();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -57,6 +58,7 @@
             this.PopOutButton = new Tabber_Insights.RoundFluentButton();
             this.label2 = new System.Windows.Forms.Label();
             this.FocusContentPanel = new Tabber_Insights.RoundFluentPanel();
+            this.CurrentFocusPeriodPanel = new System.Windows.Forms.Label();
             this.UpNextLabel = new System.Windows.Forms.Label();
             this.FocusedGoalTitle = new System.Windows.Forms.Panel();
             this.roundFluentPanel8 = new Tabber_Insights.RoundFluentPanel();
@@ -75,10 +77,11 @@
             this.PeriodsButton1 = new Tabber_Insights.RoundFluentButton();
             this.Notification = new System.Windows.Forms.NotifyIcon(this.components);
             this.FocusModesPanel = new Tabber_Insights.RoundFluentPanel();
-            this.Feeling3Button = new Tabber_Insights.RoundFluentButton();
+            this.ClearModesButton = new Tabber_Insights.RoundFluentButton();
+            this.PersonalFocusButton = new Tabber_Insights.RoundFluentButton();
             this.label7 = new System.Windows.Forms.Label();
-            this.Feeling2Button = new Tabber_Insights.RoundFluentButton();
-            this.Feeling1Button = new Tabber_Insights.RoundFluentButton();
+            this.WorkFocusButton = new Tabber_Insights.RoundFluentButton();
+            this.HomeFocusButton = new Tabber_Insights.RoundFluentButton();
             this.label8 = new System.Windows.Forms.Label();
             this.SidePanel.SuspendLayout();
             this.GoalsPanel.SuspendLayout();
@@ -249,6 +252,7 @@
             this.GoalsPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
             this.GoalsPanel.BorderRadius = 7;
             this.GoalsPanel.BorderSize = 1;
+            this.GoalsPanel.Controls.Add(this.ClearGoalsButton);
             this.GoalsPanel.Controls.Add(this.label3);
             this.GoalsPanel.Controls.Add(this.pictureBox2);
             this.GoalsPanel.Controls.Add(this.label5);
@@ -260,10 +264,34 @@
             this.GoalsPanel.Location = new System.Drawing.Point(529, 103);
             this.GoalsPanel.Margin = new System.Windows.Forms.Padding(7, 3, 7, 7);
             this.GoalsPanel.Name = "GoalsPanel";
-            this.GoalsPanel.Size = new System.Drawing.Size(279, 224);
+            this.GoalsPanel.Size = new System.Drawing.Size(279, 267);
             this.GoalsPanel.TabIndex = 2;
             this.GoalsPanel.Text = "Fluent Panel";
             this.GoalsPanel.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
+            // 
+            // ClearGoalsButton
+            // 
+            this.ClearGoalsButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ClearGoalsButton.BackColor = System.Drawing.Color.White;
+            this.ClearGoalsButton.BackgroundColor = System.Drawing.Color.White;
+            this.ClearGoalsButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.ClearGoalsButton.BorderRadius = 5;
+            this.ClearGoalsButton.BorderSize = 1;
+            this.ClearGoalsButton.FlatAppearance.BorderSize = 0;
+            this.ClearGoalsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ClearGoalsButton.Font = new System.Drawing.Font("Segoe UI Variable Display", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ClearGoalsButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
+            this.ClearGoalsButton.Location = new System.Drawing.Point(10, 221);
+            this.ClearGoalsButton.Margin = new System.Windows.Forms.Padding(3, 3, 12, 3);
+            this.ClearGoalsButton.Name = "ClearGoalsButton";
+            this.ClearGoalsButton.Size = new System.Drawing.Size(259, 36);
+            this.ClearGoalsButton.TabIndex = 28;
+            this.ClearGoalsButton.Tag = "None";
+            this.ClearGoalsButton.Text = "None";
+            this.ClearGoalsButton.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
+            this.ClearGoalsButton.UseVisualStyleBackColor = false;
+            this.ClearGoalsButton.Click += new System.EventHandler(this.ClearGoalsButton_Click);
             // 
             // label3
             // 
@@ -562,6 +590,7 @@
             this.FocusContentPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
             this.FocusContentPanel.BorderRadius = 5;
             this.FocusContentPanel.BorderSize = 1;
+            this.FocusContentPanel.Controls.Add(this.CurrentFocusPeriodPanel);
             this.FocusContentPanel.Controls.Add(this.UpNextLabel);
             this.FocusContentPanel.Controls.Add(this.FocusedGoalTitle);
             this.FocusContentPanel.Controls.Add(this.SettingsButton);
@@ -579,6 +608,19 @@
             this.FocusContentPanel.Text = "Fluent Panel";
             this.FocusContentPanel.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
             // 
+            // CurrentFocusPeriodPanel
+            // 
+            this.CurrentFocusPeriodPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CurrentFocusPeriodPanel.Font = new System.Drawing.Font("Segoe UI Variable Display", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CurrentFocusPeriodPanel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.CurrentFocusPeriodPanel.Location = new System.Drawing.Point(20, 134);
+            this.CurrentFocusPeriodPanel.Name = "CurrentFocusPeriodPanel";
+            this.CurrentFocusPeriodPanel.Size = new System.Drawing.Size(335, 24);
+            this.CurrentFocusPeriodPanel.TabIndex = 20;
+            this.CurrentFocusPeriodPanel.Text = "Focus Period 0 of 1";
+            this.CurrentFocusPeriodPanel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // UpNextLabel
             // 
             this.UpNextLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
@@ -589,7 +631,7 @@
             this.UpNextLabel.Name = "UpNextLabel";
             this.UpNextLabel.Size = new System.Drawing.Size(334, 24);
             this.UpNextLabel.TabIndex = 19;
-            this.UpNextLabel.Text = "Up Next: 5 Minute Break";
+            this.UpNextLabel.Text = "Focusing";
             this.UpNextLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FocusedGoalTitle
@@ -789,7 +831,7 @@
             this.SettingsPanel.Controls.Add(this.PeriodsButton1);
             this.SettingsPanel.Font = new System.Drawing.Font("Segoe UI Variable Display", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.SettingsPanel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
-            this.SettingsPanel.Location = new System.Drawing.Point(529, 341);
+            this.SettingsPanel.Location = new System.Drawing.Point(529, 438);
             this.SettingsPanel.Margin = new System.Windows.Forms.Padding(14, 7, 3, 3);
             this.SettingsPanel.Name = "SettingsPanel";
             this.SettingsPanel.Size = new System.Drawing.Size(279, 123);
@@ -815,7 +857,7 @@
             this.PeriodsButton3.Name = "PeriodsButton3";
             this.PeriodsButton3.Size = new System.Drawing.Size(269, 36);
             this.PeriodsButton3.TabIndex = 15;
-            this.PeriodsButton3.Text = "60 Minute Focus Periods";
+            this.PeriodsButton3.Text = "90 Minute Focus Session";
             this.PeriodsButton3.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
             this.PeriodsButton3.UseVisualStyleBackColor = false;
             this.PeriodsButton3.Click += new System.EventHandler(this.PeriodsButton3_Click);
@@ -837,7 +879,7 @@
             this.PeriodsButton2.Name = "PeriodsButton2";
             this.PeriodsButton2.Size = new System.Drawing.Size(269, 36);
             this.PeriodsButton2.TabIndex = 14;
-            this.PeriodsButton2.Text = "45 Minute Focus Periods";
+            this.PeriodsButton2.Text = "60 Minute Focus Session";
             this.PeriodsButton2.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
             this.PeriodsButton2.UseVisualStyleBackColor = false;
             this.PeriodsButton2.Click += new System.EventHandler(this.PeriodsButton2_Click);
@@ -858,7 +900,7 @@
             this.PeriodsButton1.Name = "PeriodsButton1";
             this.PeriodsButton1.Size = new System.Drawing.Size(269, 36);
             this.PeriodsButton1.TabIndex = 13;
-            this.PeriodsButton1.Text = "30 Minute Focus Periods";
+            this.PeriodsButton1.Text = "30 Minute Focus Session";
             this.PeriodsButton1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
             this.PeriodsButton1.UseVisualStyleBackColor = false;
             this.PeriodsButton1.Click += new System.EventHandler(this.PeriodsButton1_Click);
@@ -876,42 +918,67 @@
             this.FocusModesPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
             this.FocusModesPanel.BorderRadius = 7;
             this.FocusModesPanel.BorderSize = 1;
-            this.FocusModesPanel.Controls.Add(this.Feeling3Button);
+            this.FocusModesPanel.Controls.Add(this.ClearModesButton);
+            this.FocusModesPanel.Controls.Add(this.PersonalFocusButton);
             this.FocusModesPanel.Controls.Add(this.label7);
-            this.FocusModesPanel.Controls.Add(this.Feeling2Button);
-            this.FocusModesPanel.Controls.Add(this.Feeling1Button);
+            this.FocusModesPanel.Controls.Add(this.WorkFocusButton);
+            this.FocusModesPanel.Controls.Add(this.HomeFocusButton);
             this.FocusModesPanel.Controls.Add(this.label8);
             this.FocusModesPanel.Font = new System.Drawing.Font("Segoe UI Variable Display", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FocusModesPanel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
             this.FocusModesPanel.Location = new System.Drawing.Point(822, 103);
             this.FocusModesPanel.Margin = new System.Windows.Forms.Padding(7, 7, 3, 3);
             this.FocusModesPanel.Name = "FocusModesPanel";
-            this.FocusModesPanel.Size = new System.Drawing.Size(188, 158);
+            this.FocusModesPanel.Size = new System.Drawing.Size(188, 202);
             this.FocusModesPanel.TabIndex = 6;
             this.FocusModesPanel.Text = "Fluent Panel";
             this.FocusModesPanel.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
             // 
-            // Feeling3Button
+            // ClearModesButton
             // 
-            this.Feeling3Button.BackColor = System.Drawing.Color.White;
-            this.Feeling3Button.BackgroundColor = System.Drawing.Color.White;
-            this.Feeling3Button.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.Feeling3Button.BorderRadius = 5;
-            this.Feeling3Button.BorderSize = 1;
-            this.Feeling3Button.FlatAppearance.BorderSize = 0;
-            this.Feeling3Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Feeling3Button.Font = new System.Drawing.Font("Segoe UI Variable Display", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Feeling3Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
-            this.Feeling3Button.Image = global::Tabber_Insights.Properties.Resources.Education_32px;
-            this.Feeling3Button.Location = new System.Drawing.Point(126, 98);
-            this.Feeling3Button.Margin = new System.Windows.Forms.Padding(4);
-            this.Feeling3Button.Name = "Feeling3Button";
-            this.Feeling3Button.Size = new System.Drawing.Size(50, 50);
-            this.Feeling3Button.TabIndex = 27;
-            this.Feeling3Button.Tag = "Education";
-            this.Feeling3Button.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
-            this.Feeling3Button.UseVisualStyleBackColor = false;
-            this.Feeling3Button.Click += new System.EventHandler(this.FocusModeButtons_Click);
+            this.ClearModesButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ClearModesButton.BackColor = System.Drawing.Color.White;
+            this.ClearModesButton.BackgroundColor = System.Drawing.Color.White;
+            this.ClearModesButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.ClearModesButton.BorderRadius = 5;
+            this.ClearModesButton.BorderSize = 1;
+            this.ClearModesButton.FlatAppearance.BorderSize = 0;
+            this.ClearModesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ClearModesButton.Font = new System.Drawing.Font("Segoe UI Variable Display", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ClearModesButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
+            this.ClearModesButton.Location = new System.Drawing.Point(10, 156);
+            this.ClearModesButton.Margin = new System.Windows.Forms.Padding(3, 3, 12, 3);
+            this.ClearModesButton.Name = "ClearModesButton";
+            this.ClearModesButton.Size = new System.Drawing.Size(168, 36);
+            this.ClearModesButton.TabIndex = 24;
+            this.ClearModesButton.Tag = "None";
+            this.ClearModesButton.Text = "None";
+            this.ClearModesButton.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
+            this.ClearModesButton.UseVisualStyleBackColor = false;
+            this.ClearModesButton.Click += new System.EventHandler(this.FocusModeButtons_Click);
+            // 
+            // PersonalFocusButton
+            // 
+            this.PersonalFocusButton.BackColor = System.Drawing.Color.White;
+            this.PersonalFocusButton.BackgroundColor = System.Drawing.Color.White;
+            this.PersonalFocusButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.PersonalFocusButton.BorderRadius = 5;
+            this.PersonalFocusButton.BorderSize = 1;
+            this.PersonalFocusButton.FlatAppearance.BorderSize = 0;
+            this.PersonalFocusButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PersonalFocusButton.Font = new System.Drawing.Font("Segoe UI Variable Display", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PersonalFocusButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
+            this.PersonalFocusButton.Image = global::Tabber_Insights.Properties.Resources.Education_32px;
+            this.PersonalFocusButton.Location = new System.Drawing.Point(126, 98);
+            this.PersonalFocusButton.Margin = new System.Windows.Forms.Padding(4);
+            this.PersonalFocusButton.Name = "PersonalFocusButton";
+            this.PersonalFocusButton.Size = new System.Drawing.Size(50, 50);
+            this.PersonalFocusButton.TabIndex = 27;
+            this.PersonalFocusButton.Tag = "Education";
+            this.PersonalFocusButton.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
+            this.PersonalFocusButton.UseVisualStyleBackColor = false;
+            this.PersonalFocusButton.Click += new System.EventHandler(this.FocusModeButtons_Click);
             // 
             // label7
             // 
@@ -926,49 +993,49 @@
             this.label7.Text = "Select a Focus Mode";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // Feeling2Button
+            // WorkFocusButton
             // 
-            this.Feeling2Button.BackColor = System.Drawing.Color.White;
-            this.Feeling2Button.BackgroundColor = System.Drawing.Color.White;
-            this.Feeling2Button.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.Feeling2Button.BorderRadius = 5;
-            this.Feeling2Button.BorderSize = 1;
-            this.Feeling2Button.FlatAppearance.BorderSize = 0;
-            this.Feeling2Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Feeling2Button.Font = new System.Drawing.Font("Segoe UI Variable Display", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Feeling2Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
-            this.Feeling2Button.Image = global::Tabber_Insights.Properties.Resources.Work_32px;
-            this.Feeling2Button.Location = new System.Drawing.Point(68, 97);
-            this.Feeling2Button.Margin = new System.Windows.Forms.Padding(4);
-            this.Feeling2Button.Name = "Feeling2Button";
-            this.Feeling2Button.Size = new System.Drawing.Size(50, 50);
-            this.Feeling2Button.TabIndex = 26;
-            this.Feeling2Button.Tag = "Work";
-            this.Feeling2Button.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
-            this.Feeling2Button.UseVisualStyleBackColor = false;
-            this.Feeling2Button.Click += new System.EventHandler(this.FocusModeButtons_Click);
+            this.WorkFocusButton.BackColor = System.Drawing.Color.White;
+            this.WorkFocusButton.BackgroundColor = System.Drawing.Color.White;
+            this.WorkFocusButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.WorkFocusButton.BorderRadius = 5;
+            this.WorkFocusButton.BorderSize = 1;
+            this.WorkFocusButton.FlatAppearance.BorderSize = 0;
+            this.WorkFocusButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.WorkFocusButton.Font = new System.Drawing.Font("Segoe UI Variable Display", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.WorkFocusButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
+            this.WorkFocusButton.Image = global::Tabber_Insights.Properties.Resources.Work_32px;
+            this.WorkFocusButton.Location = new System.Drawing.Point(68, 97);
+            this.WorkFocusButton.Margin = new System.Windows.Forms.Padding(4);
+            this.WorkFocusButton.Name = "WorkFocusButton";
+            this.WorkFocusButton.Size = new System.Drawing.Size(50, 50);
+            this.WorkFocusButton.TabIndex = 26;
+            this.WorkFocusButton.Tag = "Work";
+            this.WorkFocusButton.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
+            this.WorkFocusButton.UseVisualStyleBackColor = false;
+            this.WorkFocusButton.Click += new System.EventHandler(this.FocusModeButtons_Click);
             // 
-            // Feeling1Button
+            // HomeFocusButton
             // 
-            this.Feeling1Button.BackColor = System.Drawing.Color.White;
-            this.Feeling1Button.BackgroundColor = System.Drawing.Color.White;
-            this.Feeling1Button.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.Feeling1Button.BorderRadius = 5;
-            this.Feeling1Button.BorderSize = 1;
-            this.Feeling1Button.FlatAppearance.BorderSize = 0;
-            this.Feeling1Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Feeling1Button.Font = new System.Drawing.Font("Segoe UI Variable Display", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Feeling1Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
-            this.Feeling1Button.Image = global::Tabber_Insights.Properties.Resources.Home_32px;
-            this.Feeling1Button.Location = new System.Drawing.Point(10, 97);
-            this.Feeling1Button.Margin = new System.Windows.Forms.Padding(4);
-            this.Feeling1Button.Name = "Feeling1Button";
-            this.Feeling1Button.Size = new System.Drawing.Size(50, 50);
-            this.Feeling1Button.TabIndex = 25;
-            this.Feeling1Button.Tag = "Personal";
-            this.Feeling1Button.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
-            this.Feeling1Button.UseVisualStyleBackColor = false;
-            this.Feeling1Button.Click += new System.EventHandler(this.FocusModeButtons_Click);
+            this.HomeFocusButton.BackColor = System.Drawing.Color.White;
+            this.HomeFocusButton.BackgroundColor = System.Drawing.Color.White;
+            this.HomeFocusButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.HomeFocusButton.BorderRadius = 5;
+            this.HomeFocusButton.BorderSize = 1;
+            this.HomeFocusButton.FlatAppearance.BorderSize = 0;
+            this.HomeFocusButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.HomeFocusButton.Font = new System.Drawing.Font("Segoe UI Variable Display", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.HomeFocusButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
+            this.HomeFocusButton.Image = global::Tabber_Insights.Properties.Resources.Home_32px;
+            this.HomeFocusButton.Location = new System.Drawing.Point(10, 97);
+            this.HomeFocusButton.Margin = new System.Windows.Forms.Padding(4);
+            this.HomeFocusButton.Name = "HomeFocusButton";
+            this.HomeFocusButton.Size = new System.Drawing.Size(50, 50);
+            this.HomeFocusButton.TabIndex = 25;
+            this.HomeFocusButton.Tag = "Personal";
+            this.HomeFocusButton.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
+            this.HomeFocusButton.UseVisualStyleBackColor = false;
+            this.HomeFocusButton.Click += new System.EventHandler(this.FocusModeButtons_Click);
             // 
             // label8
             // 
@@ -1067,8 +1134,11 @@
         private RoundFluentPanel FocusModesPanel;
         private Label label7;
         private Label label8;
-        private RoundFluentButton Feeling3Button;
-        private RoundFluentButton Feeling2Button;
-        private RoundFluentButton Feeling1Button;
+        private RoundFluentButton PersonalFocusButton;
+        private RoundFluentButton WorkFocusButton;
+        private RoundFluentButton HomeFocusButton;
+        private Label CurrentFocusPeriodPanel;
+        private RoundFluentButton ClearModesButton;
+        private RoundFluentButton ClearGoalsButton;
     }
 }

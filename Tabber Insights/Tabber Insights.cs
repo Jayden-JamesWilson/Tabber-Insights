@@ -143,19 +143,19 @@ namespace Tabber_Insights
                     #region Tabber Goals
 
                     #region Goal Titles
-                    XmlNode TabberGoalOne = xmlDocument.SelectSingleNode("/Root/GoalTitleOne");
+                    XmlNode? TabberGoalOne = xmlDocument.SelectSingleNode("/Root/GoalTitleOne");
                     if (TabberGoalOne != null)
                     {
                         Properties.Settings.Default.TabberGoalTitles[0] = TabberGoalOne.InnerText;
                     }
 
-                    XmlNode TabberGoalTwo = xmlDocument.SelectSingleNode("/Root/GoalTitleTwo");
+                    XmlNode? TabberGoalTwo = xmlDocument.SelectSingleNode("/Root/GoalTitleTwo");
                     if (TabberGoalTwo != null)
                     {
                         Properties.Settings.Default.TabberGoalTitles[1] = TabberGoalTwo.InnerText;
                     }
 
-                    XmlNode TabberGoalThree = xmlDocument.SelectSingleNode("/Root/GoalTitleThree");
+                    XmlNode? TabberGoalThree = xmlDocument.SelectSingleNode("/Root/GoalTitleThree");
                     if (TabberGoalThree != null)
                     {
                         Properties.Settings.Default.TabberGoalTitles[2] = TabberGoalThree.InnerText;
@@ -163,19 +163,19 @@ namespace Tabber_Insights
                     #endregion
 
                     #region Goal Descriptions
-                    XmlNode GoalDescriptionOne = xmlDocument.SelectSingleNode("/Root/GoalDescriptionOne");
+                    XmlNode? GoalDescriptionOne = xmlDocument.SelectSingleNode("/Root/GoalDescriptionOne");
                     if (GoalDescriptionOne != null)
                     {
                         Properties.Settings.Default.TabberGoalDescriptions[0] = GoalDescriptionOne.InnerText;
                     }
 
-                    XmlNode GoalDescriptionTwo = xmlDocument.SelectSingleNode("/Root/GoalDescriptionTwo");
+                    XmlNode? GoalDescriptionTwo = xmlDocument.SelectSingleNode("/Root/GoalDescriptionTwo");
                     if (GoalDescriptionTwo != null)
                     {
                         Properties.Settings.Default.TabberGoalDescriptions[1] = GoalDescriptionTwo.InnerText;
                     }
 
-                    XmlNode GoalDescriptionThree = xmlDocument.SelectSingleNode("/Root/GoalDescriptionThree");
+                    XmlNode? GoalDescriptionThree = xmlDocument.SelectSingleNode("/Root/GoalDescriptionThree");
                     if (GoalDescriptionThree != null)
                     {
                         Properties.Settings.Default.TabberGoalDescriptions[2] = GoalDescriptionThree.InnerText;
@@ -183,19 +183,19 @@ namespace Tabber_Insights
                     #endregion
 
                     #region Goal Priorities
-                    XmlNode GoalPrioritiesOne = xmlDocument.SelectSingleNode("/Root/GoalPrioritiesOne");
+                    XmlNode? GoalPrioritiesOne = xmlDocument.SelectSingleNode("/Root/GoalPrioritiesOne");
                     if (GoalPrioritiesOne != null)
                     {
                         Properties.Settings.Default.TabberGoalPriorities[0] = GoalPrioritiesOne.InnerText;
                     }
 
-                    XmlNode GoalPrioritiesTwo = xmlDocument.SelectSingleNode("/Root/GoalPrioritiesTwo");
+                    XmlNode? GoalPrioritiesTwo = xmlDocument.SelectSingleNode("/Root/GoalPrioritiesTwo");
                     if (GoalPrioritiesTwo != null)
                     {
                         Properties.Settings.Default.TabberGoalPriorities[1] = GoalPrioritiesTwo.InnerText;
                     }
 
-                    XmlNode GoalPrioritiesThree = xmlDocument.SelectSingleNode("/Root/GoalPrioritiesThree");
+                    XmlNode? GoalPrioritiesThree = xmlDocument.SelectSingleNode("/Root/GoalPrioritiesThree");
                     if (GoalPrioritiesThree != null)
                     {
                         Properties.Settings.Default.TabberGoalPriorities[2] = GoalPrioritiesThree.InnerText;
@@ -203,19 +203,19 @@ namespace Tabber_Insights
                     #endregion
 
                     #region Goal Dates
-                    XmlNode GoalDatesOne = xmlDocument.SelectSingleNode("/Root/GoalDatesOne");
+                    XmlNode? GoalDatesOne = xmlDocument.SelectSingleNode("/Root/GoalDatesOne");
                     if (GoalDatesOne != null)
                     {
                         Properties.Settings.Default.TabberGoalDates[0] = GoalDatesOne.InnerText;
                     }
 
-                    XmlNode GoalDatesTwo = xmlDocument.SelectSingleNode("/Root/GoalDatesTwo");
+                    XmlNode? GoalDatesTwo = xmlDocument.SelectSingleNode("/Root/GoalDatesTwo");
                     if (GoalDatesTwo != null)
                     {
                         Properties.Settings.Default.TabberGoalDates[1] = GoalDatesTwo.InnerText;
                     }
 
-                    XmlNode GoalDatesThree = xmlDocument.SelectSingleNode("/Root/GoalDatesThree");
+                    XmlNode? GoalDatesThree = xmlDocument.SelectSingleNode("/Root/GoalDatesThree");
                     if (GoalDatesThree != null)
                     {
                         Properties.Settings.Default.TabberGoalDates[2] = GoalDatesThree.InnerText;
@@ -225,19 +225,19 @@ namespace Tabber_Insights
                     #endregion
 
                     #region Tabber Focus 
-                    XmlNode FocusPeriodMinutes = xmlDocument.SelectSingleNode("/Root/FocusPeriodMinutes");
+                    XmlNode? FocusPeriodMinutes = xmlDocument.SelectSingleNode("/Root/FocusPeriodMinutes");
                     if (FocusPeriodMinutes != null)
                     {
                         Properties.Settings.Default.FocusPeriodMinutes = Convert.ToInt32(FocusPeriodMinutes.InnerText);
                     }
 
-                    XmlNode BreakPeriodMinutes = xmlDocument.SelectSingleNode("/Root/BreakPeriodMinutes");
+                    XmlNode? BreakPeriodMinutes = xmlDocument.SelectSingleNode("/Root/BreakPeriodMinutes");
                     if (BreakPeriodMinutes != null)
                     {
                         Properties.Settings.Default.BreakPeriodMinutes = Convert.ToInt32(BreakPeriodMinutes.InnerText);
                     }
 
-                    XmlNode TotalFocusSeconds = xmlDocument.SelectSingleNode("/Root/TotalFocusSeconds");
+                    XmlNode? TotalFocusSeconds = xmlDocument.SelectSingleNode("/Root/TotalFocusSeconds");
                     if (BreakPeriodMinutes != null)
                     {
                         Properties.Settings.Default.TotalFocusSeconds = Convert.ToInt32(TotalFocusSeconds.InnerText);
@@ -245,17 +245,17 @@ namespace Tabber_Insights
                     #endregion
 
                     #region Tabber Reflect
-                    XmlNode LastReflectionLog = xmlDocument.SelectSingleNode("/Root/LastReflectionLog");
+                    XmlNode? LastReflectionLog = xmlDocument.SelectSingleNode("/Root/LastReflectionLog");
                     if (LastReflectionLog != null)
                     {
                         Properties.Settings.Default.LastReflectionLog = LastReflectionLog.InnerText;
                     }
-                    XmlNode ReflectionScore = xmlDocument.SelectSingleNode("/Root/ReflectionScore");
+                    XmlNode? ReflectionScore = xmlDocument.SelectSingleNode("/Root/ReflectionScore");
                     if (ReflectionScore != null)
                     {
                         Properties.Settings.Default.ReflectionScore = Convert.ToInt32(ReflectionScore.InnerText);
                     }
-                    XmlNode ReflectionLogs = xmlDocument.SelectSingleNode("/Root/ReflectionLogs");
+                    XmlNode? ReflectionLogs = xmlDocument.SelectSingleNode("/Root/ReflectionLogs");
                     if (ReflectionLogs != null)
                     {
                         Properties.Settings.Default.ReflectionLogs = ReflectionLogs.InnerText;
@@ -269,17 +269,31 @@ namespace Tabber_Insights
         private void TabberInsights_FormClosing(object sender, FormClosingEventArgs e)
         {
             DialogResult result = MessageBox.Show("Exiting Tabber Insights. If there is a new update any unsaved work will be lost. Do you want to export your data?",
-                "Export Tabber Insights Data", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                "Export Tabber Insights Data", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
 
             if (result == DialogResult.Yes)
             {
                 SaveValues();
+            }
+            else if (result == DialogResult.Cancel)
+            {
+                e.Cancel = true;
             }
         }
 
         private void TabberInsights_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void TabberInsights_Paint(object sender, PaintEventArgs e)
+        {
+            float dpiX = e.Graphics.DpiX;
+            float dpiY = e.Graphics.DpiY;
+
+            // Scale the drawing surface based on the DPI of the device
+            e.Graphics.ScaleTransform(dpiX / 96f, dpiY / 96f);
+
         }
     }
 }

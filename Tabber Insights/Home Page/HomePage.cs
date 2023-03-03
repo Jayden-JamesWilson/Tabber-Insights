@@ -1,4 +1,4 @@
-﻿using PowerArgs;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,14 +17,12 @@ using System.Xml;
 using Tabber_Insights.Tabber_Focus;
 using Tabber_Insights.Tabber_Reflect;
 using Tabber_Insights.Tabber_Tasks;
-using Windows.UI.Notifications;
 
 namespace Tabber_Insights.Home_Page
 {
     public partial class HomePage : UserControl
     {
         #region Constructor
-        public int? Feeling = Properties.Settings.Default.ReflectionScore;
         public string? LastLog = Properties.Settings.Default.LastReflectionLog.ToString();
 
         private int TotalFocusSeconds;
@@ -65,9 +63,7 @@ namespace Tabber_Insights.Home_Page
         {
             InitializeComponent();
 
-            #region Calculations
-            int FeelingRounded = (int)Feeling * 6;
-            #endregion
+            Score.Text = Properties.Settings.Default.ReflectionScore.ToString();
 
             #region Last Reflection Log
             if (LastLog != "")
@@ -77,34 +73,6 @@ namespace Tabber_Insights.Home_Page
             else
             {
                 ReflectionEntry.Text = "No Entries Added";
-            }
-            #endregion
-
-            #region Reflection Score
-            if (FeelingRounded < 1)
-            {
-                FeelingScore.Width = 6;
-                FeelingScore.BackColor = CustomRed;
-            }
-            else if (FeelingRounded >= 1 && FeelingRounded <= 100)
-            {
-                FeelingScore.Width = FeelingRounded;
-                FeelingScore.BackColor = CustomRed;
-            }
-            else if (FeelingRounded > 100 && FeelingRounded <= 200)
-            {
-                FeelingScore.Width = FeelingRounded;
-                FeelingScore.BackColor = CustomOrange;
-            }
-            else if (FeelingRounded > 200 && FeelingRounded <= 300)
-            {
-                FeelingScore.Width = FeelingRounded;
-                FeelingScore.BackColor = CustomGreen;
-            }
-            else
-            {
-                FeelingScore.Width = FeelingRounded;
-                FeelingScore.BackColor = CustomGreen;
             }
             #endregion
 
@@ -594,10 +562,6 @@ namespace Tabber_Insights.Home_Page
         {
             LoadValues();
 
-            #region Calculations
-            int FeelingRounded = (int)Feeling * 6;
-            #endregion
-
             #region Last Reflection Log
             if (LastLog != "")
             {
@@ -606,34 +570,6 @@ namespace Tabber_Insights.Home_Page
             else
             {
                 ReflectionEntry.Text = "No Entries Added";
-            }
-            #endregion
-
-            #region Reflection Score
-            if (FeelingRounded < 1)
-            {
-                FeelingScore.Width = 6;
-                FeelingScore.BackColor = CustomRed;
-            }
-            else if (FeelingRounded >= 1 && FeelingRounded <= 100)
-            {
-                FeelingScore.Width = FeelingRounded;
-                FeelingScore.BackColor = CustomRed;
-            }
-            else if (FeelingRounded > 100 && FeelingRounded <= 200)
-            {
-                FeelingScore.Width = FeelingRounded;
-                FeelingScore.BackColor = CustomOrange;
-            }
-            else if (FeelingRounded > 200 && FeelingRounded <= 300)
-            {
-                FeelingScore.Width = FeelingRounded;
-                FeelingScore.BackColor = CustomGreen;
-            }
-            else
-            {
-                FeelingScore.Width = FeelingRounded;
-                FeelingScore.BackColor = CustomGreen;
             }
             #endregion
 

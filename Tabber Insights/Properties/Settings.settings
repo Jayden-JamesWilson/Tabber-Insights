@@ -38,17 +38,11 @@
   &lt;string&gt;Goal Description 4&lt;/string&gt;
 &lt;/ArrayOfString&gt;</Value>
     </Setting>
-    <Setting Name="FocusPeriodMinutes" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">30</Value>
-    </Setting>
     <Setting Name="BreakPeriodMinutes" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
     <Setting Name="ReflectionLogs" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="ReflectionScore" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">25</Value>
     </Setting>
     <Setting Name="LastReflectionLog" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
@@ -58,6 +52,15 @@
     </Setting>
     <Setting Name="UpgradeRequired" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ReflectionScore" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="FocusPeriodMinutes" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">27</Value>
+    </Setting>
+    <Setting Name="ReflectionCount" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
     </Setting>
   </Settings>
 </SettingsFile>

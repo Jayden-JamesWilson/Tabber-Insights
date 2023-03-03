@@ -13,10 +13,4 @@
     <SourceRoot Include="C:\Users\JTech\.nuget\packages\" />
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
-  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)uno.fonts.fluent\2.0.0-dev.20\buildTransitive\Uno.Fonts.Fluent.props" Condition="Exists('$(NuGetPackageRoot)uno.fonts.fluent\2.0.0-dev.20\buildTransitive\Uno.Fonts.Fluent.props')" />
-  </ImportGroup>
-  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgUno_UI Condition=" '$(PkgUno_UI)' == '' ">C:\Users\JTech\.nuget\packages\uno.ui\4.7.37</PkgUno_UI>
-  </PropertyGroup>
 </Project>
