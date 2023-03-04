@@ -42,7 +42,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.roundFluentPanel1 = new Tabber_Insights.RoundFluentPanel();
             this.roundFluentPanel4 = new Tabber_Insights.RoundFluentPanel();
-            this.Score = new System.Windows.Forms.Label();
+            this.FeelingScore = new Tabber_Insights.RoundFluentPanel();
             this.roundFluentPanel2 = new Tabber_Insights.RoundFluentPanel();
             this.ReflectionEntry = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -342,7 +342,7 @@
             this.roundFluentPanel4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
             this.roundFluentPanel4.BorderRadius = 5;
             this.roundFluentPanel4.BorderSize = 1;
-            this.roundFluentPanel4.Controls.Add(this.Score);
+            this.roundFluentPanel4.Controls.Add(this.FeelingScore);
             this.roundFluentPanel4.Font = new System.Drawing.Font("Segoe UI Variable Display", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.roundFluentPanel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
             this.roundFluentPanel4.Location = new System.Drawing.Point(10, 93);
@@ -352,18 +352,22 @@
             this.roundFluentPanel4.Text = "Fluent Panel";
             this.roundFluentPanel4.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
             // 
-            // Score
+            // FeelingScore
             // 
-            this.Score.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Score.Font = new System.Drawing.Font("Segoe UI Variable Text", 11.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Score.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.Score.Location = new System.Drawing.Point(3, 2);
-            this.Score.Name = "Score";
-            this.Score.Size = new System.Drawing.Size(305, 29);
-            this.Score.TabIndex = 21;
-            this.Score.Text = "0";
-            this.Score.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.FeelingScore.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(136)))), ((int)(((byte)(76)))));
+            this.FeelingScore.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(136)))), ((int)(((byte)(76)))));
+            this.FeelingScore.BorderColor = System.Drawing.Color.Empty;
+            this.FeelingScore.BorderRadius = 4;
+            this.FeelingScore.BorderSize = 1;
+            this.FeelingScore.Font = new System.Drawing.Font("Segoe UI Variable Display", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FeelingScore.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
+            this.FeelingScore.Location = new System.Drawing.Point(6, 6);
+            this.FeelingScore.Margin = new System.Windows.Forms.Padding(6);
+            this.FeelingScore.Name = "FeelingScore";
+            this.FeelingScore.Size = new System.Drawing.Size(150, 24);
+            this.FeelingScore.TabIndex = 26;
+            this.FeelingScore.Text = "Fluent Panel";
+            this.FeelingScore.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
             // 
             // roundFluentPanel2
             // 
@@ -912,6 +916,7 @@
         private Label ReflectionEntry;
         private Label label6;
         private RoundFluentPanel roundFluentPanel4;
+        private RoundFluentPanel FeelingScore;
         private RoundFluentPanel roundFluentPanel5;
         private Label label10;
         private PictureBox pictureBox4;
@@ -931,6 +936,5 @@
         private RoundFluentButton ClearFocusMinutesButton;
         private RoundFluentButton OpenButton;
         private ToolTip ToolTip;
-        private Label Score;
     }
 }

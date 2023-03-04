@@ -12,15 +12,18 @@ namespace Tabber_Insights
         [STAThread]
         static void Main()
         {
+            //SetProcessDPIAware();
+            // To customize application configuration such as set high DPI settings or default font,
+            // see https://aka.ms/applicationconfiguration.
+
             if (Environment.OSVersion.Version.Major >= 6)
-                SetProcessDPIAware();
+            SetProcessDPIAware();
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new LoadingScreen());
         }
 
-        // ***also dllimport of that function***
         [System.Runtime.InteropServices.DllImport("user32.dll")]
         private static extern bool SetProcessDPIAware();
     }
